@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 
-export const PoopPostTemplate = ({
+export const CasesPostTemplate = ({
   content,
   contentComponent,
   description,
@@ -45,7 +45,7 @@ export const PoopPostTemplate = ({
   )
 }
 
-PoopPostTemplate.propTypes = {
+CasesPostTemplate.propTypes = {
   content: PropTypes.string.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -53,31 +53,31 @@ PoopPostTemplate.propTypes = {
   helmet: PropTypes.instanceOf(Helmet),
 }
 
-const PoopPost = ({ data }) => {
+const CasesPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <PoopPostTemplate
+    <CasesPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Poop`} />}
+      helmet={<Helmet title={`${post.frontmatter.title} | Cases`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
   )
 }
 
-PoopPost.propTypes = {
+CasesPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default PoopPost
+export default CasesPost
 
 export const pageQuery = graphql`
-  query PoopPostByID($id: String!) {
+  query CasesPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
