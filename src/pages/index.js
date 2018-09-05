@@ -21,17 +21,17 @@ export default class IndexPage extends React.Component {
                 key={post.id}
               >
                 <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
+                  <Link className="has-text-primary" to={post.frontmatter.title}>
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
                   <small>{post.frontmatter.date}</small>
                 </p>
                 <p>
-                  {post.excerpt}
+                  {post.frontmatter.manchet}
                   <br />
                   <br />
-                  <Link className="button is-small" to={post.fields.slug}>
+                  <Link className="button is-small" to={post.frontmatter.title}>
                     Keep Reading →
                   </Link>
                 </p>
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+      filter: { frontmatter: { templateKey: { eq: "cases-post" } }}
     ) {
       edges {
         node {
@@ -67,6 +67,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             templateKey
+            manchet
             date(formatString: "MMMM DD, YYYY")
           }
         }
