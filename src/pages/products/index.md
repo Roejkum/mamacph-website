@@ -1,6 +1,6 @@
 ---
-templateKey: 'product-page'
-path: /products
+templateKey: product-page
+path: /product
 title: Our Coffee
 image: /img/jumbotron.jpg
 heading: What we offer
@@ -99,3 +99,4 @@ pricing:
       plan: Custom
       price: '??'
 ---
+
