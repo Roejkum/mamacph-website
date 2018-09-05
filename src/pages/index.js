@@ -21,7 +21,7 @@ export default class IndexPage extends React.Component {
                 key={post.id}
               >
                 <p>
-                  <Link className="has-text-primary" to={post.frontmatter.title}>
+                  <Link className="has-text-primary" to={post.frontmatter.path}>
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
@@ -31,7 +31,7 @@ export default class IndexPage extends React.Component {
                   {post.frontmatter.manchet}
                   <br />
                   <br />
-                  <Link className="button is-small" to={post.frontmatter.title}>
+                  <Link className="button is-small" to={post.frontmatter.path}>
                     Keep Reading →
                   </Link>
                 </p>
