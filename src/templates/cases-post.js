@@ -11,6 +11,7 @@ export const CasesPostTemplate = ({
   description,
   tags,
   title,
+  manchet,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -24,20 +25,8 @@ export const CasesPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
+            <p>{manchet}</p>
             <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
         </div>
       </div>
@@ -60,7 +49,7 @@ const CasesPost = ({ data }) => {
     <CasesPostTemplate
       content={post.html}
       contentComponent={HTMLContent}
-      description={post.frontmatter.description}
+      manchet={post.frontmatter.manchet}
       helmet={<Helmet title={`${post.frontmatter.title} | Cases`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
