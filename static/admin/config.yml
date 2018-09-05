@@ -21,9 +21,9 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-  - name: "poop"
-    label: "Poop"
-    folder: "src/pages/poop"
+  - name: "cases"
+    label: "Cases"
+    folder: "src/pages/cases"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
