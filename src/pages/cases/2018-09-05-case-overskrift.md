@@ -1,6 +1,6 @@
 ---
 templateKey: cases-post
-path: Case
+path: /akfCase
 image: /img/chemex.jpg
 title: Case overskrift
 manchet: En manchet med uddybende beskrivelse
