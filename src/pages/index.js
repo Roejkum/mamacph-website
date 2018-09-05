@@ -66,6 +66,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            path
             templateKey
             manchet
             date(formatString: "MMMM DD, YYYY")
