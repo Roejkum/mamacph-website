@@ -28,6 +28,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cases-post"}
+      - {label: "Path", name: "path", widget: "string"}
       - {label: "Featured image", name: "image", widget: "image"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Manchet", name: "manchet", widget: "string"}
