@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
+import Content, { HTMLContent } from '../components/Content';
 
 export const CasesPostTemplate = ({
   content,
@@ -32,7 +33,9 @@ export const CasesPostTemplate = ({
 }
 
 CasesPostTemplate.propTypes = {
-  manchet: PropTypes.string,
+  content: PropTypes.string.isRequired,
+  contentComponent: PropTypes.func,
+  description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
