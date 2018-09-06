@@ -13,7 +13,52 @@ $primary-invert: $kaldi-yellow-invert
 
 .section 
   animation: fade-in 0.4s
-
+.case-subtitle
+  max-height: 0px
+  transition: all 0.6s ease
+  overflow: hidden
+.content-mosaik:hover .case-subtitle
+  max-height: 80px
+  transition: all 0.6s ease
+.gradiant 
+  width: 100%
+  height: 100%
+  position: absolute
+  z-index: 200
+  bottom: 0
+  left: 0
+  background-color: rgba(0, 0, 0, 0) 60%
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0) 60%), to(rgba(0, 0, 0, .7) 100%))
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%)
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%)
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%)
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%)
+  border-radius: 3px
+  transition: all 0.4s
+.content-mosaik 
+  position: relative
+  overflow: hidden
+  border-radius: 3px
+.mosaik-element 
+    position: absolute
+    bottom: 15px
+    left: 20px
+    right: 20px
+    z-index: 300
+.overlay-mosaik
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: 201
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.7)
+    opacity: 0
+    transition: all 0.4s ease
+.content-mosaik:hover .overlay-mosaik
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transition: all 0.4s ease;
 .content .taglist
   list-style: none
   margin-bottom: 0

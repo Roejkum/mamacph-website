@@ -15,26 +15,23 @@ export default class IndexPage extends React.Component {
           </div>
           {posts
             .map(({ node: post }) => (
-              <div
-                className="content"
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
-                key={post.id}
-              >
-                <p>
+              <div className="content content-mosaik" key={post.id}>
+              <div className="overlay-mosaik"></div>
+              <div className="gradiant"></div>
+              <img src={post.frontmatter.image}/>
+              <div className="mosaik-element">
+                <p >
                   <Link className="has-text-primary" to={post.frontmatter.path}>
                     {post.frontmatter.title}
+                    
                   </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
                 </p>
-                <p>
+                <p className="case-subtitle">
                   {post.frontmatter.manchet}
                   <br />
                   <br />
-                  <Link className="button is-small" to={post.frontmatter.path}>
-                    Keep Reading →
-                  </Link>
                 </p>
+                </div>
               </div>
             ))}
         </div>
@@ -66,6 +63,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            image
             path
             templateKey
             manchet

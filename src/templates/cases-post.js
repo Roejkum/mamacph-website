@@ -10,6 +10,7 @@ export const CasesPostTemplate = ({
   contentComponent,
   description,
   tags,
+  image,
   title,
   manchet,
   helmet,
@@ -25,6 +26,7 @@ export const CasesPostTemplate = ({
               {title}
             </h1>
             <p>{manchet}</p>
+            <img src={image}/>
           </div>
         </div>
       </div>
@@ -33,11 +35,9 @@ export const CasesPostTemplate = ({
 }
 
 CasesPostTemplate.propTypes = {
-  content: PropTypes.string.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
+  // helmet: PropTypes.instanceOf(Helmet),
+  helmet: PropTypes.object,
 }
 
 const CasesPost = ({ data }) => {
@@ -49,6 +49,7 @@ const CasesPost = ({ data }) => {
       helmet={<Helmet title={`${post.frontmatter.title} | Cases`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
+      image={post.frontmatter.image}
     />
   )
 }
@@ -71,6 +72,7 @@ export const pageQuery = graphql`
         title
         manchet
         heading
+        image
         path
         tags
       }
