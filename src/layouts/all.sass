@@ -7,6 +7,13 @@ $kaldi-yellow-invert: #fff
 $primary: $kaldi-yellow
 $primary-invert: $kaldi-yellow-invert
 
+@keyframes fade-in
+  0% {transform: translateY(50px); opacity: 0}
+  100% {transform: translateY(0px); opacity: 1}
+
+.section 
+  animation: fade-in 0.4s
+
 .content .taglist
   list-style: none
   margin-bottom: 0

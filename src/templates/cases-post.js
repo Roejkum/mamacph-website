@@ -1,9 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import Content, { HTMLContent } from '../components/Content'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { kebabCase } from 'lodash';
+import Helmet from 'react-helmet';
+import Link from 'gatsby-link';
 
 export const CasesPostTemplate = ({
   content,
@@ -14,7 +13,6 @@ export const CasesPostTemplate = ({
   manchet,
   helmet,
 }) => {
-  const PostContent = contentComponent || Content
 
   return (
     <section className="section">
@@ -26,7 +24,6 @@ export const CasesPostTemplate = ({
               {title}
             </h1>
             <p>{manchet}</p>
-            <PostContent content={content} />
           </div>
         </div>
       </div>
@@ -35,9 +32,7 @@ export const CasesPostTemplate = ({
 }
 
 CasesPostTemplate.propTypes = {
-  content: PropTypes.string.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
+  manchet: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
@@ -47,8 +42,6 @@ const CasesPost = ({ data }) => {
 
   return (
     <CasesPostTemplate
-      content={post.html}
-      contentComponent={HTMLContent}
       manchet={post.frontmatter.manchet}
       helmet={<Helmet title={`${post.frontmatter.title} | Cases`} />}
       tags={post.frontmatter.tags}
