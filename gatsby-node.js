@@ -16,7 +16,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             }
             frontmatter {
               tags
-              path
               templateKey
             }
           }
@@ -30,11 +29,11 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges
-    
+
     posts.forEach(edge => {
       const id = edge.node.id
       createPage({
-        path: edge.node.frontmatter.path,
+        path: edge.node.fields.slug,
         tags: edge.node.frontmatter.tags,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
