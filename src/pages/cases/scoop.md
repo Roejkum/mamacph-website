@@ -1,0 +1,12 @@
+---
+templateKey: cases-post
+path: /scoop-de-poop
+image: /img/products-grid2.jpg
+title: Scoop
+manchet: Mums!
+heading: Mums
+date: '2018-09-06T13:29:50+02:00'
+images:
+  - image: /img/chemex.jpg
+---
+
