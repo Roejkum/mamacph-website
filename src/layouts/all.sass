@@ -8,18 +8,28 @@ $primary: $kaldi-yellow
 $primary-invert: $kaldi-yellow-invert
 
 @keyframes fade-in
-  0% {transform: translateY(50px); opacity: 0}
+  0% {transform: translateY(30px); opacity: 0.8}
   100% {transform: translateY(0px); opacity: 1}
 
+
+img
+  width: 100%
 .section 
   animation: fade-in 0.4s
 .case-subtitle
   max-height: 0px
-  transition: all 0.6s ease
+  transition: max-height 0.6s ease
   overflow: hidden
 .content-mosaik:hover .case-subtitle
   max-height: 80px
-  transition: all 0.6s ease
+  transition: max-height 0.6s ease
+.mosaik-element p 
+  z-index: 500
+  position: relative
+  color: inherit
+  color: white
+  margin-bottom: 0 !important
+  line-height: 1.5
 .gradiant 
   width: 100%
   height: 100%
@@ -38,7 +48,8 @@ $primary-invert: $kaldi-yellow-invert
 .content-mosaik 
   position: relative
   overflow: hidden
-  border-radius: 3px
+  border-radius: 15px
+  line-height: 0.9
 .mosaik-element 
     position: absolute
     bottom: 15px
@@ -90,5 +101,106 @@ $primary-invert: $kaldi-yellow-invert
 
 .margin-top-0
   margin-top: 0 !important
+
+
+  //toggle
+.navbar-mobile
+  position: absolute
+  right: 0
+  top: 0
+  height: 52px
+  display: none
+.icon-menu
+  display: none
+@media screen and (max-width: 1087px)
+  .navbar-mobile
+    display: flex
+  .navbar-end
+    // height: 0
+    display: flex
+    justify-content: space-around
+    overflow: hidden
+    transition: height 0.4s ease
+    width: 100%
+  .navbar .container
+    display: flex !important
+    align-items: flex-end  !important
+  .navbar 
+    top: auto
+    bottom: 0
+  .navbar-brand
+    position: fixed
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+  .navbar-end .navbar-item 
+    font-size: 0.9rem
+    width: 30%
+    text-align: center
+  .icon-menu 
+    display: block
+    width: 1.5rem
+    height: 1.5rem
+    margin: auto  
+  .icon-menu img
+    width: 100%
+
+
+
+.navbarToggle 
+  border: 0
+  background: transparent
+
+.navbarToggle .icon-bar 
+    background-color: black
+    display: block
+
+.navbarToggle .icon-bar 
+    width: 25px
+    transition: all 0.2s
+    margin: 4px 0
+    margin-left: auto
+  
+.navbarToggle .top-bar 
+    -ms-transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+    -ms-transform-origin: 10% 10%
+    -webkit-transform-origin: 10% 10%
+    transform-origin: 10% 10%
+  
+.navbarToggle .middle-bar 
+    opacity: 0
+  
+.navbarToggle .bottom-bar 
+    -ms-transform: rotate(-45deg)
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+    -ms-transform-origin: 10% 90%
+    -webkit-transform-origin: 10% 90%
+    transform-origin: 10% 90%
+
+.navbarToggle.collapsed .top-bar 
+    -ms-transform: rotate(0)
+    -webkit-transform: rotate(0)
+    transform: rotate(0)
+
+.navbarToggle.collapsed .middle-bar 
+    opacity: 1
+    width: 32px
+
+.navbarToggle.collapsed .bottom-bar 
+    -ms-transform: rotate(0)
+    -webkit-transform: rotate(0)
+    transform: rotate(0)
+
+.navbarToggle .icon-bar 
+    height: 4px
+    border-radius: 3px
+
+.navbar
+  position: fixed !important
+  width: 100%
+  z-index: 600 !important
 
 @import "~bulma"

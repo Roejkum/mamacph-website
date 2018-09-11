@@ -16,22 +16,19 @@ export default class IndexPage extends React.Component {
           {posts
             .map(({ node: post }) => (
               <div className="content content-mosaik" key={post.id}>
-              <div className="overlay-mosaik"></div>
-              <div className="gradiant"></div>
-              <img src={post.frontmatter.image}/>
+              <Link className="has-text-white" to={post.frontmatter.path}><img src={post.frontmatter.image}/>
+              
               <div className="mosaik-element">
-                <p >
-                  <Link className="has-text-primary" to={post.frontmatter.path}>
+                <p className="has-text-weight-bold">      
                     {post.frontmatter.title}
-                    
-                  </Link>
                 </p>
                 <p className="case-subtitle">
                   {post.frontmatter.manchet}
-                  <br />
-                  <br />
                 </p>
                 </div>
+                <div className="overlay-mosaik"></div>
+                <div className="gradiant"></div>
+                </Link>
               </div>
             ))}
         </div>
