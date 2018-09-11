@@ -14,7 +14,7 @@ export default class IndexPage extends React.Component {
           <div className="content">
             <h2 className="has-text-weight-bold has-text-centered">UDVALGTE CASES</h2>
           </div>
-          <Masonry />
+          {/* <Masonry /> */}
           {posts
             .map(({ node: post }) => (
               <div className="content content-mosaik" key={post.id}>
