@@ -7,7 +7,11 @@ import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="MAMA | Digitale interaktive løsninger" meta="name='viewport' content='initial-scale=1, viewport-fit=cover'"/>
+    <Helmet> 
+      <title>MAMA | Digitale interaktive løsninger</title>
+      <meta name="viewport" content="initial-scale=1, viewport-fit=cover"/>
+    
+    </Helmet>
     <Navbar />
     <div>{children()}</div>
   </div>
