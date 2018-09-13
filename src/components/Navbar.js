@@ -18,19 +18,19 @@ const Navbar = () => (
         </Link>
       </div>
       <div className="navbar-end">
-        <Link className="navbar-item has-text-black has-text-weight-bold" to="/web">
+        <Link activeClassName="active" className="navbar-item has-text-black has-text-weight-bold" to="/web">
       <span className="icon-menu">
           <img src={webIcon} />
         </span>
           Website 
         </Link>
-        <Link className="navbar-item has-text-black has-text-weight-bold" to="/web">
+        <Link activeClassName="active" className="navbar-item has-text-black has-text-weight-bold" to="/web">
       <span className="icon-menu">
           <img src={arVrIcon} />
         </span>
           VR/AR
         </Link>
-        <Link className="navbar-item has-text-black has-text-weight-bold" to="/video">
+        <Link activeClassName="active" className="navbar-item has-text-black has-text-weight-bold" to="/video">
         
         <span className="icon-menu">
         <img src={videoIcon} />
