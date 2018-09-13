@@ -12,9 +12,8 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: 'auto'}} />
-          </figure>
+          <img src={logo} alt="Kaldi" style={{ width: 'auto'}} />
+          
         </Link>
       </div>
       <div className="navbar-end">
@@ -24,7 +23,7 @@ const Navbar = () => (
         </span>
           Website 
         </Link>
-        <Link activeClassName="active" className="navbar-item has-text-black has-text-weight-bold" to="/web">
+        <Link activeClassName="active" className="navbar-item has-text-black has-text-weight-bold" to="/arvr">
       <span className="icon-menu">
           <img src={arVrIcon} />
         </span>
