@@ -13,7 +13,8 @@ const TemplateWrapper = ({ children }) => (
     
     </Helmet>
     <Navbar />
-    <div>{children()}</div>
+    
+    <div className="page-content">{children()}</div>
   </div>
 )
 

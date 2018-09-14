@@ -7,15 +7,16 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
+    // console.log(posts);
     return (
-      <section className="section">
+      <section className="section-fullwidth section">
         <div className="container">
           <div className="content">
             <h2 className="has-text-weight-bold has-text-centered">UDVALGTE CASES</h2>
           </div>
-          {/* <Masonry /> */}
-          {posts
+          </div>
+          <Masonry posts={posts}/>
+          {/* {posts
             .map(({ node: post }) => (
               <div className="content content-mosaik" key={post.id}>
               <Link className="has-text-white" to={post.frontmatter.path}><img src={post.frontmatter.image}/>
@@ -32,8 +33,8 @@ export default class IndexPage extends React.Component {
                 <div className="gradiant"></div>
                 </Link>
               </div>
-            ))}
-        </div>
+            ))} */}
+        
       </section>
     )
   }

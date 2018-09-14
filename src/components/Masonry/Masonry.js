@@ -15,46 +15,45 @@ class Masonry extends Component {
     windowResizeHandler = () => {
         let winWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             if (winWidth <= 600) {
-                this.reorder(this.state.cardsOG, 1);
+                this.reorder(this.props.posts, 1);
             } else if (winWidth <= 900) {
-                this.reorder(this.state.cardsOG, 2);
+                this.reorder(this.props.posts, 2);
             } else {
-                this.reorder(this.state.cardsOG, 3);
+                this.reorder(this.props.posts, 3);
             }
     }
     componentWillMount() {
         const initialWinWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             if (initialWinWidth <= 600) {
                 this.setState({columns: 1});
+                console.log('1 kolonner');
             }  if (initialWinWidth <= 900) {
                 this.setState({columns: 2});
+                console.log('2 kolonner');
             } else {
                 this.setState({columns: 3});
+                console.log('3 kolonner');
             }
     }
     componentDidMount() {
-        this.fetchEr();
-        window.addEventListener("resize", this.windowResizeHandler, false);         
-        console.log('Mount');
+        // this.fetchEr();
+        this.reorder(this.props.posts, this.state.columns);
+
+        window.addEventListener("resize", this.windowResizeHandler, false);  
+        console.log('Mount');       
     }
     
     componentWillUnmount() {
         window.removeEventListener("resize", this.windowResizeHandler, false);
     }
-
-    fetchEr = () => {
-        fetch(`https://jsonplaceholder.typicode.com/posts`)
-        .then(response => response.json())
-        .then(result => {
-            this.reorder(result.slice(0,this.state.maxCards), this.state.columns);
-            this.setState({ cardsOG: result.slice(0,this.state.maxCards) });
-        })
-        .catch(e => e);
+    componentDidUpdate() {
+        console.log('Update');
     }
+
     reorder = (arr, columns) => {      
         const cols = columns;
         let col = 0;
-        const columnsContent = [];
+        let columnsContent = [];
         while(col < cols) {
             const arrayContent = [];
             for(let i = 0; i < arr.length; i += cols) {
@@ -68,6 +67,7 @@ class Masonry extends Component {
 
         }
         this.setState({ cardColumns: columnsContent, cardsLoaded: true});
+        console.log(this.state.cardColumns);
     }
 
     // handleClickCard = (card) => {
@@ -81,7 +81,7 @@ class Masonry extends Component {
         columns = this.state.cardColumns.map(column => {
             return <Column 
                         cardsLoaded={this.state.cardsLoaded}
-                        key={column[0].id}
+                        key={column[0].node.fields.slug}
                         cards={column} 
                         active={this.state.cardActive} 
                         handleClickCard={this.handleClickCard} />

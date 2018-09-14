@@ -10,6 +10,40 @@ $primary: #ffcb3c
   0% {transform: translateY(30px); opacity: 0.8}
   100% {transform: translateY(0px); opacity: 1}
 
+.page-content
+  padding-top: 80px
+.browser
+  height: 400px
+  width: 100%
+  border: 2px solid #01f9cb
+  box-sizing: border-box
+  border-radius: 10px
+.dots
+  position: absolute;
+  left: 25px
+  top: 5px
+  width: 10px
+  height: 10px
+  border-radius: 50%
+  background: #ffd400
+.dots::before
+  content: ''
+  display: block
+  position: absolute
+  width: 10px
+  height: 10px
+  background: #ff5757
+  left: -15px
+  border-radius: 50%
+.dots::after
+  content: ''
+  display: block
+  position: absolute
+  width: 10px
+  height: 10px
+  background: #71ea71
+  right: -15px
+  border-radius: 50%
 body 
   margin: 0
   font-family: Open Sans, sans-serif
@@ -22,62 +56,11 @@ img
   width: 100%
 .section 
   animation: fade-in 0.4s
-  padding: 5rem 1.5rem
-.case-subtitle
-  max-height: 0px
-  transition: max-height 0.6s ease
-  overflow: hidden
-.content-mosaik:hover .case-subtitle
-  max-height: 80px
-  transition: max-height 0.6s ease
-.mosaik-element p 
-  z-index: 500
-  position: relative
-  color: inherit
-  color: white
-  margin-bottom: 0 !important
-  line-height: 1.5
-.gradiant 
-  width: 100%
-  height: 100%
-  position: absolute
-  z-index: 200
-  bottom: 0
-  left: 0
-  background-color: rgba(0, 0, 0, 0) 60%
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0) 60%), to(rgba(0, 0, 0, .7) 100%))
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%)
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%)
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%)
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%)
-  border-radius: 3px
-  transition: all 0.4s
-.content-mosaik 
-  position: relative
-  overflow: hidden
-  border-radius: 15px
-  line-height: 0.9
-  margin-bottom: 30px
-.mosaik-element 
-    position: absolute
-    bottom: 15px
-    left: 20px
-    right: 20px
-    z-index: 300
-.overlay-mosaik
-    width: 100%
-    height: 100%
-    position: absolute
-    z-index: 201
-    bottom: 0
-    left: 0
-    background: rgba(0, 0, 0, 0.7)
-    opacity: 0
-    transition: all 0.4s ease
-.content-mosaik:hover .overlay-mosaik
-    background: rgba(0, 0, 0, 0.7)
-    opacity: 1
-    transition: all 0.4s ease
+.container
+  padding: 0 15px
+.section-fullwidth
+  padding: 0
+
 // .content .taglist
 //   list-style: none
 //   margin-bottom: 0
@@ -131,6 +114,7 @@ img
   box-sizing: border-box
 .navbar .container
   display: flex
+  padding: 0
 .navbar-brand img
   height: 40px
 .navbar-brand a
@@ -144,6 +128,8 @@ img
     justify-content: flex-end
     align-items: center
 @media screen and (max-width: 1087px)
+  .page-content
+    padding-top: 0px
   .navbar-mobile
     display: flex
   .navbar-end

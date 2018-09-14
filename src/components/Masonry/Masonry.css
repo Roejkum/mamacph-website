@@ -1,7 +1,5 @@
-
 .masonry-wrapper {
     display: flex;
-    padding: 0 15px;
 }
 .masonry-wrapper>div {
     flex-grow: 1;
@@ -12,37 +10,70 @@
     position: relative;
     margin: 30px 15px;
 }
-
-/* @keyframes card-animation {
-    from {opacity: 0; transform: translateY(50px)}
-    to {opacity: 1; transform: translateY(0px)}
-} */
-
-.card {
+.bold {
+    font-weight: bold;
+}
+.case-subtitle {
+  max-height: 0px;
+  transition: max-height 0.6s ease;
+  overflow: hidden;
+}
+.content-mosaik:hover .case-subtitle{
+  max-height: 80px;
+  transition: max-height 0.6s ease;
+}
+.mosaik-element p {
+  z-index: 500;
   position: relative;
-  border: 1px solid #f5f3f3;
-  background: #fff;
-  color: #aca7a7;
-  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  overflow:hidden;
-  transition: transform 0.4s ease;
-  /* transform: translateY(50px);
-  animation-name: card-animation;
-  transition: all 0.4s ease; */
-  }
-  .card > div {
-    padding: 22px; }
-  .card .media {
-    position: relative;
-    min-height: 200px;
-    height: 15vh;
-    overflow: hidden;
-    padding: 0;
-    background: #d2c9c9; }
-    .card .media img {
-      width: 100%; }
-  .card:hover {
-    transform: translateY(-5px) scale(1.005);
-    transition: transform 0.2s ease;
-    cursor: pointer; }
+  color: inherit;
+  color: white;
+  margin-bottom: 0 !important;
+  line-height: 1.5;
+}
+.gradiant {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 200;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0) 60%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0) 60%), to(rgba(0, 0, 0, .7) 100%));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, .7) 100%);
+  border-radius: 3px;
+  transition: all 0.4s;
+}
+.content-mosaik {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  line-height: 0.9;
+  margin: 0 15px;
+  margin-bottom: 30px;
+}
+.mosaik-element {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+    z-index: 300;
+}
+.overlay-mosaik{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 201;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.content-mosaik:hover .overlay-mosaik{
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transition: all 0.4s ease;
+}
