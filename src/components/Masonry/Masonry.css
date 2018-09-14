@@ -13,6 +13,9 @@
 .bold {
     font-weight: bold;
 }
+h3.mosaik-title {
+    color: white;
+}
 .case-subtitle {
   max-height: 0px;
   transition: max-height 0.6s ease;
@@ -50,9 +53,10 @@
   position: relative;
   overflow: hidden;
   border-radius: 15px;
-  line-height: 0.9;
+  line-height: 0;
   margin: 0 15px;
   margin-bottom: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
 }
 .mosaik-element {
     position: absolute;

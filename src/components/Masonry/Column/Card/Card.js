@@ -8,9 +8,9 @@ const Card = (props) => {
               <Link className="has-text-white" to={props.card.node.frontmatter.path}><img src={props.card.node.frontmatter.image}/>
               
               <div className="mosaik-element">
-                <p className="bold">      
+                <h3 className="bold mosaik-title">      
                     {props.card.node.frontmatter.title}
-                </p>
+                </h3>
                 <p className="case-subtitle">
                   {props.card.node.frontmatter.manchet}
                 </p>
