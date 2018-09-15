@@ -1,0 +1,12 @@
+.masonryWrapper {
+    display: flex;
+}
+.masonryWrapper>div {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.masonryWrapper .card {
+    display: block;
+    position: relative;
+    margin: 30px 15px;
+}

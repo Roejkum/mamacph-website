@@ -1,31 +1,19 @@
-.masonry-wrapper {
-    display: flex;
-}
-.masonry-wrapper>div {
-    flex-grow: 1;
-    flex-basis: 0;
-}
-.masonry-wrapper .card {
-    display: block;
-    position: relative;
-    margin: 30px 15px;
-}
 .bold {
     font-weight: bold;
 }
-h3.mosaik-title {
+h3.mosaikTitle {
     color: white;
 }
-.case-subtitle {
+.caseSubtitle {
   max-height: 0px;
   transition: max-height 0.6s ease;
   overflow: hidden;
 }
-.content-mosaik:hover .case-subtitle{
+.contentMosaik:hover .caseSubtitle{
   max-height: 80px;
   transition: max-height 0.6s ease;
 }
-.mosaik-element p {
+.mosaikElement p {
   z-index: 500;
   position: relative;
   color: inherit;
@@ -49,7 +37,7 @@ h3.mosaik-title {
   border-radius: 3px;
   transition: all 0.4s;
 }
-.content-mosaik {
+.contentMosaik {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
@@ -58,14 +46,14 @@ h3.mosaik-title {
   margin-bottom: 30px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
 }
-.mosaik-element {
+.mosaikElement {
     position: absolute;
     bottom: 15px;
     left: 20px;
     right: 20px;
     z-index: 300;
 }
-.overlay-mosaik{
+.overlayMosaik{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -76,7 +64,7 @@ h3.mosaik-title {
     opacity: 0;
     transition: all 0.4s ease;
 }
-.content-mosaik:hover .overlay-mosaik{
+.contentMosaik:hover .overlay-mosaik{
     background: rgba(0, 0, 0, 0.7);
     opacity: 1;
     transition: all 0.4s ease;
