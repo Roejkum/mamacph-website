@@ -13,7 +13,8 @@ class Masonry extends Component {
         }; 
     }
     windowResizeHandler = () => {
-        let winWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        if (typeof window !== 'undefined') {
+            let winWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             if (winWidth <= 600) {
                 this.reorder(this.props.posts, 1);
             } else if (winWidth <= 900) {
@@ -21,30 +22,36 @@ class Masonry extends Component {
             } else {
                 this.reorder(this.props.posts, 3);
             }
+        }
     }
     componentWillMount() {
-        const initialWinWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        if (typeof window !== 'undefined') {
+            const initialWinWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             if (initialWinWidth <= 600) {
                 this.setState({columns: 1});
                 console.log('1 kolonner');
-            }  if (initialWinWidth <= 900) {
+            } else if (initialWinWidth <= 900) {
                 this.setState({columns: 2});
                 console.log('2 kolonner');
             } else {
                 this.setState({columns: 3});
                 console.log('3 kolonner');
             }
+        }
     }
     componentDidMount() {
         // this.fetchEr();
         this.reorder(this.props.posts, this.state.columns);
-
-        window.addEventListener("resize", this.windowResizeHandler, false);  
+        if (typeof window !== 'undefined') {
+            window.addEventListener("resize", this.windowResizeHandler, false);  
+        }
         console.log('Mount');       
     }
     
     componentWillUnmount() {
-        window.removeEventListener("resize", this.windowResizeHandler, false);
+        if (typeof window !== 'undefined') {
+            window.removeEventListener("resize", this.windowResizeHandler, false);
+        }
     }
     componentDidUpdate() {
         console.log('Update');
