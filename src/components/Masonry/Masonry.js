@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './Masonry.module.css';
+import './Masonry.css';
 import Column from './Column/Column';
 
 class Masonry extends Component {
@@ -95,7 +95,7 @@ class Masonry extends Component {
         });
         return (
             <div>
-                <div className={styles.masonryWrapper}>
+                <div className="masonryWrapper">
                     {columns}
                 </div>
             </div>

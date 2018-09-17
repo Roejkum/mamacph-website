@@ -1,23 +1,23 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import styles from './Card.module.css';
+import './Card.css';
 
 const Card = (props) => {
    
     return (
-    <div className={[styles.content, styles.contentMosaik].join(' ')}>
+    <div className="content contentMosaik">
               <Link to={props.card.node.frontmatter.path}><img src={props.card.node.frontmatter.image}/>
               
-              <div className={styles.mosaikElement}>
-                <h3 className={[styles.bold, styles.mosaikTitle].join(' ')}>      
+              <div className="mosaikElement">
+                <h3 className="bold mosaikTitle">      
                     {props.card.node.frontmatter.title}
                 </h3>
-                <p className={styles.caseSubtitle}>
+                <p className="caseSubtitle">
                   {props.card.node.frontmatter.manchet}
                 </p>
                 </div>
-                <div className={styles.overlayMosaik}></div>
-                <div className={styles.gradiant}></div>
+                <div className="overlayMosaik"></div>
+                <div className="gradiant"></div>
                 </Link>
               </div>
 )}
