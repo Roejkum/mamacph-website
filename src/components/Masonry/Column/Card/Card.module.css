@@ -3,6 +3,7 @@
 }
 h3.mosaikTitle {
     color: white;
+    margin-bottom: 0;
 }
 .caseSubtitle {
   max-height: 0px;
