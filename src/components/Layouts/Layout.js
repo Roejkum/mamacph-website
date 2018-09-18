@@ -1,8 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import Navbar from '../Navbar';
-import './layout.sass';
+import Navbar from '../Navbar/Navbar';
+import './layout.scss';
 
 const Layout = ({ children }) => (
   <div>

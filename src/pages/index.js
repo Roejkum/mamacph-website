@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Masonry from '../components/Masonry/Masonry';
 import Layout from '../components/Layouts/Layout';
+import { graphql } from 'gatsby';
 
 export default class IndexPage extends React.Component {
   render() {

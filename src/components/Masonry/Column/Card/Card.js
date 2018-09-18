@@ -5,7 +5,7 @@ const Card = (props) => {
    
     return (
     <div className="content contentMosaik">
-              <Link to={props.card.node.frontmatter.path}><img src={props.card.node.frontmatter.image}/>
+              <Link to={props.card.node.frontmatter.path}><img src={props.card.node.frontmatter.image} alt={props.card.node.frontmatter.title}/>
               
               <div className="mosaikElement">
                 <h3 className="bold mosaikTitle">      

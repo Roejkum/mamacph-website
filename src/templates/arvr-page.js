@@ -4,6 +4,7 @@ import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
 import Layout from '../components/Layouts/Layout';
+import { graphql } from 'gatsby';
 
 export const ArVrTemplate = ({
   image,

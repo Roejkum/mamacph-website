@@ -29,13 +29,10 @@ class Masonry extends Component {
             const initialWinWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             if (initialWinWidth <= 600) {
                 this.setState({columns: 1});
-                console.log('1 kolonner');
             } else if (initialWinWidth <= 900) {
                 this.setState({columns: 2});
-                console.log('2 kolonner');
             } else {
                 this.setState({columns: 3});
-                console.log('3 kolonner');
             }
         }
     }
@@ -45,16 +42,12 @@ class Masonry extends Component {
         if (typeof window !== 'undefined') {
             window.addEventListener("resize", this.windowResizeHandler, false);  
         }
-        console.log('Mount');       
     }
     
     componentWillUnmount() {
         if (typeof window !== 'undefined') {
             window.removeEventListener("resize", this.windowResizeHandler, false);
         }
-    }
-    componentDidUpdate() {
-        console.log('Update');
     }
 
     reorder = (arr, columns) => {      
@@ -74,7 +67,6 @@ class Masonry extends Component {
 
         }
         this.setState({ cardColumns: columnsContent, cardsLoaded: true});
-        console.log(this.state.cardColumns);
     }
 
     // handleClickCard = (card) => {

@@ -63,6 +63,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   margin-bottom: 30px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
 }
+.contentMosaik img { 
+    margin: 0!important;
+}
 .mosaikElement {
     position: absolute;
     bottom: 15px;

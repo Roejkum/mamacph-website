@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { kebabCase } from 'lodash';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import Content, { HTMLContent } from '../components/Content';
+import { graphql } from 'gatsby';
 
 export const CasesPostTemplate = ({
   content,
@@ -26,7 +24,7 @@ export const CasesPostTemplate = ({
               {title}
             </h1>
             <p>{manchet}</p>
-            <img src={image}/>
+            <img src={image} alt={title}/>
           </div>
         </div>
       </div>
