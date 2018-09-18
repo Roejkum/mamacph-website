@@ -28,6 +28,9 @@ h3.mosaikTitle {
   max-height: 80px;
   transition: max-height 0.6s ease;
 }
+.contentMosaik {
+    margin: 0;
+}
 .mosaikElement p {
   z-index: 500;
   position: relative;

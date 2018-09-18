@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import github from '../img/github-icon.svg';
 import logo from '../img/mamalogo.png';
 import videoIcon from '../img/video.png';
 import webIcon from '../img/web.png';

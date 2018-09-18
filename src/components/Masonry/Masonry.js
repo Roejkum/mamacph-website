@@ -24,7 +24,7 @@ class Masonry extends Component {
             }
         }
     }
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         if (typeof window !== 'undefined') {
             const initialWinWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             if (initialWinWidth <= 600) {
