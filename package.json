@@ -6,7 +6,7 @@
   "dependencies": {
     "ajv": "^6.5.3",
     "bulma": "^0.7.0",
-    "gatsby": "^2.0.0",
+    "gatsby": "^2.0.1",
     "gatsby-link": "^2.0.1",
     "gatsby-plugin-netlify": "^2.0.0",
     "gatsby-plugin-netlify-cms": "^3.0.0",
