@@ -1,7 +1,7 @@
 ---
 templateKey: cases-post
 path: /scoop-de-poop
-image: /img/products-grid2.jpg
+image: /img/danmarkvelfaerd.jpg
 title: Scoop
 manchet: Mums!
 heading: Mums
