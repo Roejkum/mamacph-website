@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Masonry.css';
+import './Masonry.scss';
 import Column from './Column/Column';
 
 class Masonry extends Component {
