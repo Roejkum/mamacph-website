@@ -1,8 +1,7 @@
 ---
 templateKey: cases-post
 path: /akfCase
-slug: /test
-image: /img/chemex.jpg
+image: /img/assembly.jpg
 title: Case overskrift
 manchet: En manchet med uddybende beskrivelse
 heading: LOL
