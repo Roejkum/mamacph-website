@@ -62,9 +62,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   margin: 0 15px;
   margin-bottom: 30px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
 }
 .contentMosaik:hover {
     transform: translateY(-10px);
+    transition: all 0.4s ease;
 }
 .contentMosaik img { 
     margin: 0!important;
