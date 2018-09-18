@@ -14,7 +14,7 @@ export default class IndexPage extends React.Component {
       <section className="section-fullwidth section">
         <div className="container">
           <div className="content">
-            <h2 className="bold center">UDVALGTE CASES</h2>
+            <h2 className="bold center">Handpicked Cases</h2>
           </div>
           </div>
           <Masonry posts={posts}/>
