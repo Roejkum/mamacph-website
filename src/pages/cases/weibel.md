@@ -1,7 +1,7 @@
 ---
 templateKey: cases-post
 path: /weibel
-image: /img/weibel-stående.jpg
+image: /img/weibel-staende.jpg
 title: Weibel
 manchet: 3D-animationer for dansk radarfirma
 heading: Animationer!
