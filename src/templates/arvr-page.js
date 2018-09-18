@@ -1,8 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Features from '../components/Features';
+import Testimonials from '../components/Testimonials';
+import Pricing from '../components/Pricing';
+import Layout from '../components/Layouts/Layout';
 
 export const ArVrTemplate = ({
   image,
@@ -15,6 +16,7 @@ export const ArVrTemplate = ({
   fullImage,
   pricing,
 }) => (
+  <Layout>
   <section className="section section--gradient">
     <div className="container">
       <div className="section">
@@ -106,6 +108,7 @@ export const ArVrTemplate = ({
       </div>
     </div>
   </section>
+  </Layout>
 )
 
 ArVrTemplate.propTypes = {
