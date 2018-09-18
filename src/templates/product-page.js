@@ -4,6 +4,7 @@ import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
 import { graphql } from 'gatsby';
+import Layout from '../components/Layouts/Layout';
 
 export const ProductPageTemplate = ({
   image,
@@ -16,6 +17,7 @@ export const ProductPageTemplate = ({
   fullImage,
   pricing,
 }) => (
+  <Layout>
   <section className="section section--gradient">
     <div className="container">
       <div className="section">
@@ -104,6 +106,7 @@ export const ProductPageTemplate = ({
       </div>
     </div>
   </section>
+  </Layout>
 )
 
 ProductPageTemplate.propTypes = {

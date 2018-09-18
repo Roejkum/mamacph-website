@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
+import Layout from '../components/Layouts/Layout';
 
 export const CasesPostTemplate = ({
   content,
@@ -15,6 +16,7 @@ export const CasesPostTemplate = ({
 }) => {
 
   return (
+    <Layout>
     <section className="section">
       {helmet || ''}
       <div className="container content">
@@ -29,6 +31,7 @@ export const CasesPostTemplate = ({
         </div>
       </div>
     </section>
+    </Layout>
   )
 }
 
