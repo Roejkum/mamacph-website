@@ -1,3 +1,4 @@
+@import '../../utils/variables.scss';
 .jumbotron {
     position: relative;
     overflow: hidden;
@@ -11,8 +12,8 @@
     z-index: -10;
     position: absolute;
     border-radius: 50%;
-    background: #e6e7f4;
-    box-shadow: 0px 0px 20px #e6e7f3;
+    background: $primary;
+    box-shadow: 0px 0px 20px $primary;
 }
 .browser{
   height: 400px;
