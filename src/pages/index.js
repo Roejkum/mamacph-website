@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Masonry from '../components/Masonry/Masonry';
 import Layout from '../components/Layouts/Layout';
 import { graphql } from 'gatsby';
+import Jumbotron from '../components/Jumbotron/Jumbotron';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -11,12 +12,15 @@ export default class IndexPage extends React.Component {
     // console.log(posts);
     return (
       <Layout>
+        <Jumbotron />
       <section className="section-fullwidth section">
-        <div className="container">
+        <div className="row">
+          <div className="col-xs-12">
+          
           <div className="content">
             <h2 className="bold center">Handpicked Cases</h2>
           </div>
-          </div>
+          
           <Masonry posts={posts}/>
           {/* {posts
             .map(({ node: post }) => (
@@ -36,7 +40,8 @@ export default class IndexPage extends React.Component {
                 </Link>
               </div>
             ))} */}
-        
+        </div>
+          </div>
       </section>
       </Layout>
     )

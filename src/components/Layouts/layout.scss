@@ -1,4 +1,5 @@
 @import '../../utils/variables.scss';
+@import './flexboxgrid.scss';
 
 @keyframes fade-in {
   0% {
@@ -11,46 +12,19 @@
 a {
   text-shadow: none!important;
   background-image: none;}
-.page-content{
-  padding-top: 80px;}
-.browser{
-  height: 400p;
-  width: 100%;
-  border: 2px solid #01f9cb;
-  box-sizing: border-box;
-  border-radius: 10px;}
-.dots{
-  position: absolute;
-  left: 25px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #ffd400;}
-.dots::before{
-  content: '';
-  display: block;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #ff5757;
-  left: -15px;
-  border-radius: 50%;}
-.dots::after{
-  content: '';
-  display: block;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #71ea71;
-  right: -15px;
-  border-radius: 50%;}
+section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+.bg-primary {
+  background: $primary;
+}
+
 body {
   margin: 0;}
-figure{
-  margin: 0;}
+
 a {
-  color: inherit!important;
+  color: inherit!important; 
   text-decoration: none!important;
   background-image: none!important;}
 img{
@@ -58,10 +32,6 @@ img{
   margin: 0!important;}
 .section {
   animation: fade-in 0.4s;}
-.container{
-  padding: 0 15px;}
-.section-fullwidth{
-  padding: 0;}
 .bold{
   font-weight: bold;}
 .center{
@@ -70,7 +40,7 @@ li {
   padding: 0 2rem 1rem 0;
   margin-bottom: 1.5rem;
   margin-top: 0;}
-@media screen and (max-width: 1087px){
+@media screen and (max-width: 767px){
   .page-content{
     padding-top: 0px;}
 }

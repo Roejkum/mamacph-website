@@ -9,7 +9,7 @@ import './Navbar.scss';
 
 const Navbar = () => (
   <nav className="navbar is-primary ">
-    <div className="container">
+    <div className="row">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           <img src={logo} alt="Kaldi" style={{ width: 'auto'}} />

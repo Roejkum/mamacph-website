@@ -21,8 +21,9 @@
   padding: 0 1.5rem;
   box-sizing: border-box;
 }
-.navbar .container{
+.navbar .row{
   display: flex;
+  justify-content: space-between;
   padding: 0;
 }
 .navbar-brand img {
@@ -37,14 +38,13 @@
 }
 .navbar-end {
     display: flex;
-    width: 100%;
     justify-content: flex-end;
     align-items: center;
 }
 .navbar-brand{
   line-height: 0;
 }
-@media screen and (max-width: 1087px){
+@media screen and (max-width: 767px){
   .page-content{
     padding-top: 0px;}
   .navbar-mobile{
@@ -55,7 +55,7 @@
     overflow: hidden;
     transition: height 0.4s ease;
     width: 100%;}
-  .navbar .container{
+  .navbar .row{
     display: flex !important;
     align-items: flex-end  !important;}
   .navbar {
@@ -74,7 +74,8 @@
     flex: 1;
     padding: 10px 0;
     padding-bottom: env(safe-area-inset-bottom);
-    padding-bottom: constant(safe-area-inset-bottom);}
+    padding-bottom: constant(safe-area-inset-bottom);
+  }
   .icon-menu {
     display: block;
     width: 1.5rem;

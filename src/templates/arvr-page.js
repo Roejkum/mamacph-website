@@ -28,9 +28,7 @@ export const ArVrTemplate = ({
                 className="full-width-image-container margin-top-0"
                 style={{ backgroundImage: `url(${image})` }}
               >
-              <div className="browser">
-      <div className="dots"></div>
-    </div>
+              
                 <h2
                   className="has-text-weight-bold is-size-1"
                   style={{
