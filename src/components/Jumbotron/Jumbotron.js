@@ -10,7 +10,7 @@ const Jumbotron = (props) => {
             <img src={Img} className="jumbotron-image" alt="Jumbotron background image"/>
             <div className="jumbtron-bg jumbotron-content">
             <div className="row">
-                <div className="col-xs-12 col-sm-4 col-sm-offset-2">
+                <div className="col-xs-12 col-sm-6 col-sm-offset-2">
                     <h1 className="jumbotron-heading">
                         <span className="css-fisw11">
                             <span className="css-3w0cwq">

@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Content, { HTMLContent } from '../components/Content';
 import { graphql } from 'gatsby';
+import Layout from '../components/Layouts/Layout';
 
 export const BlogPostTemplate = ({
   content,
@@ -17,6 +18,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
+  <Layout>
     <section className="section">
       {helmet || ''}
       <div className="container content">
@@ -43,6 +45,7 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
+    </Layout>
   )
 }
 
