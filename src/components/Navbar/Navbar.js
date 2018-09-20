@@ -10,6 +10,7 @@ import './Navbar.scss';
 const Navbar = () => (
   <nav className="navbar is-primary ">
     <div className="row">
+    <div className="col-xs-12 col-sm-8 col-sm-offset-2">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
           <img src={logo} alt="Kaldi" style={{ width: 'auto'}} />
@@ -44,6 +45,7 @@ const Navbar = () => (
           <span className="icon-bar bottom-bar"></span>
         </button>
       </div> */}
+    </div>
     </div>
   </nav>
 )

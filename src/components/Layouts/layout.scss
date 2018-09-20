@@ -11,7 +11,10 @@
 }
 a {
   text-shadow: none!important;
-  background-image: none;}
+  background-image: none;
+  color: $signal; 
+  text-decoration: none!important;
+  background-image: none!important;}
 section {
   padding: 100px 0;
   overflow: hidden;
@@ -22,11 +25,6 @@ section {
 
 body {
   margin: 0;}
-
-a {
-  color: inherit!important; 
-  text-decoration: none!important;
-  background-image: none!important;}
 img{
   width: 100%;
   margin: 0!important;}

@@ -1,19 +1,23 @@
 @import '../../utils/variables.scss';
 .jumbotron {
     position: relative;
-    overflow: hidden;
-}
-.jumbtron-bg::before {
-    content: "";
-    width: 200%;
-    height: 100%;
-    top: -20%;
-    left: -80%;
+    overflow: visible;
     z-index: -10;
-    position: absolute;
-    border-radius: 50%;
-    background: $primary;
-    box-shadow: 0px 0px 20px $primary;
+}
+// .jumbtron-bg::before {
+//     content: "";
+//     width: 200%;
+//     height: 100%;
+//     top: -20%;
+//     left: -80%;
+//     z-index: -10;
+//     position: absolute;
+//     border-radius: 50%;
+//     background: $primary;
+//     box-shadow: 0px 0px 20px $primary;
+// }
+.none {
+    display: none;
 }
 .browser{
   height: 400px;
@@ -49,3 +53,124 @@
   background: #71ea71;
   right: -15px;
   border-radius: 50%;}
+
+
+
+@keyframes topToBottom {
+    0% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    29% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+  .slidingVertical {
+    display: block;
+  }
+
+  .slidingVertical span {
+    animation: topToBottom 7.5s linear infinite 0s;
+    opacity: 0;
+    position: absolute;
+  }
+.slidingVertical span:nth-child(2) {
+    animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3) {
+    animation-delay: 5s;
+}
+  .css-fisw11 {
+      display: block;
+  }
+  .jumbotron-heading {
+      margin-bottom: 120px;
+      margin-top: 50px;
+      line-height: 1.5;
+      color: $signal;
+  }
+  .btn {
+      padding: 20px 30px;
+      border: 2px solid $signal;
+      border-radius: 5px;
+      color: $signal;
+      font-size: 1.2rem;
+      transition: all 0.4s ease;
+  }
+  
+@keyframes animation_1qwiqbg {
+  0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 30px 60px;
+    }
+}
+
+  .btn:hover {
+    background-size: 30px 30px;
+    border-color: transparent;
+    color: white;
+    background-color: #663399;
+    background-image: -webkit-linear-gradient(45deg, rgba(0,0,0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0, 0.1) 50%, rgba(0,0,0, 0.1) 75%, transparent 75%, transparent)!important;
+    background-image: -moz-linear-gradient(45deg, rgba(0,0,0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0, 0.1) 50%, rgba(0,0,0, 0.1) 75%, transparent 75%, transparent)!important;
+    background-image: linear-gradient(45deg, rgba(0,0,0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0, 0.1) 50%, rgba(0,0,0, 0.1) 75%, transparent 75%, transparent)!important;
+    animation: animation_1qwiqbg 2.8s linear infinite;
+    -webkit-animation: animation_1qwiqbg 2.8s linear infinite;
+    -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0px 30px $signal;
+    transition: 0.4s ease;
+  }
+  .jumbotron-image {
+      position: absolute;
+      width: 80%;
+      left: 50%;
+      top: -70%;
+      z-index: -10;
+  }
+@media screen and (max-width: 1400px) {
+      .jumbotron-image {
+            top: -40%;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+      .jumbotron-image {
+            top: -30%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+      .hidden-xs {
+      display: none;
+  }
+    .jumbotron-image {
+            bottom: -20%;
+            top: auto;
+            width: 300%;
+    }
+    .jumbotron {
+        padding-top: 30px;
+    }
+  }
+
+  

@@ -38,6 +38,7 @@
     "slate": "^0.40.2",
     "slate-schema-violations": "^0.1.39",
     "typography": "^0.16.17",
+    "typography-theme-kirkham": "^0.16.3",
     "typography-theme-ocean-beach": "^0.15.11",
     "uuid": "^3.2.1",
     "webpack": "^4.19.1"
