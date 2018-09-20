@@ -8,7 +8,7 @@ const Jumbotron = (props) => {
     return (
         <section className="jumbotron">
             <img src={Img} className="jumbotron-image" alt="Jumbotron background image"/>
-            <div className="jumbtron-bg">
+            <div className="jumbtron-bg jumbotron-content">
             <div className="row">
                 <div className="col-xs-12 col-sm-4 col-sm-offset-2">
                     <h1 className="jumbotron-heading">

@@ -18,6 +18,8 @@ a {
 section {
   padding: 100px 0;
   overflow: hidden;
+  z-index: 10;
+  position: relative;
 }
 .bg-primary {
   background: $primary;

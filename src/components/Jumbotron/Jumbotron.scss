@@ -2,7 +2,7 @@
 .jumbotron {
     position: relative;
     overflow: visible;
-    z-index: -10;
+    z-index: 0;
 }
 // .jumbtron-bg::before {
 //     content: "";
@@ -148,6 +148,10 @@
       left: 50%;
       top: -70%;
       z-index: -10;
+  }
+  .jumbotron-content {
+      z-index: 100;
+      position: relative;
   }
 @media screen and (max-width: 1400px) {
       .jumbotron-image {
