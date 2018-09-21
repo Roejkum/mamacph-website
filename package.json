@@ -31,7 +31,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-emotion": "^9.2.10",
+    "react-emotion": "^9.2.10", 
     "react-helmet": "^5.2.0",
     "react-immutable-proptypes": "^2.1.0",
     "react-typography": "^0.16.13",
