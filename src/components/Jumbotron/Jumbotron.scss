@@ -130,7 +130,7 @@
   .btn:hover {
     background-size: 30px 30px;
     border-color: transparent;
-    color: white;
+    color: white!important;
     background-color: #663399;
     background-image: -webkit-linear-gradient(45deg, rgba(0,0,0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0, 0.1) 50%, rgba(0,0,0, 0.1) 75%, transparent 75%, transparent)!important;
     background-image: -moz-linear-gradient(45deg, rgba(0,0,0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0, 0.1) 50%, rgba(0,0,0, 0.1) 75%, transparent 75%, transparent)!important;

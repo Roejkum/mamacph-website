@@ -11,10 +11,11 @@
 }
 a {
   text-shadow: none!important;
-  background-image: none;
-  color: $signal; 
+  // background-image: none;
+  color: $signal!important; 
   text-decoration: none!important;
-  background-image: none!important;}
+  // background-image: none!important;
+  }
 section {
   padding: 100px 0;
   overflow: hidden;
