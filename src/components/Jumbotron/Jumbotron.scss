@@ -172,12 +172,22 @@
   @media screen and (max-width: 600px) {
       .jumbotron-image {
           top: 10vw;
+          width: 130vw;
       }
   }
 
   @media screen and (max-width: 450px) {
       .jumbotron-image {
           top: 30vw;
+      }
+
+  }
+  @media screen and (max-width: 400px) {
+      .jumbotron-image {
+          top: 30vw;
+      }
+      .jumbotron-heading {
+          font-size: 1.6rem;
       }
   }
 // @media screen and (max-width: 1400px) {
