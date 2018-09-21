@@ -18,7 +18,7 @@ export default class IndexPage extends React.Component {
           <div className="col-xs-12">
           
           <div className="content">
-            <h2 className="bold center section-heading">Some of our Cases</h2>
+            <h2 className="bold center section-heading">Some of our cases</h2>
           </div>
           
           <Masonry posts={posts}/>
