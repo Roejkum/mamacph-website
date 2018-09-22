@@ -3,24 +3,28 @@ import './Masonry.scss';
 import Column from './Column/Column';
 
 class Masonry extends Component {
-    constructor() {
-        super();
-        this.state = {
+    
+        state = {
             columns: null,
-            maxCards: 20,
+            maxCards: 3,
             cardColumns: [],
             cardsLoaded: false,
+            OGcards: this.props.posts,
+            cardsWithLimit: []
         }; 
-    }
+
     windowResizeHandler = () => {
         if (typeof window !== 'undefined') {
             let winWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             if (winWidth <= 600) {
-                this.reorder(this.props.posts, 1);
+                // this.reorder(this.props.posts, 1);
+                this.setState({columns: 1});
             } else if (winWidth <= 900) {
-                this.reorder(this.props.posts, 2);
+                // this.reorder(this.props.posts, 2);
+                this.setState({columns: 2});
             } else {
-                this.reorder(this.props.posts, 3);
+                // this.reorder(this.props.posts, 3);
+                this.setState({columns: 3});
             }
         }
     }
@@ -37,12 +41,15 @@ class Masonry extends Component {
         }
     }
     componentDidMount() {
-        // this.fetchEr();
-        this.reorder(this.props.posts, this.state.columns);
+        const posts = this.state.OGcards;
+        const postLimitMax = posts.slice(0,this.state.maxCards);
+        this.setState({cardsWithLimit: postLimitMax});
+        this.reorder(postLimitMax, this.state.columns);
         if (typeof window !== 'undefined') {
             window.addEventListener("resize", this.windowResizeHandler, false);  
         }
     }
+   
     
     componentWillUnmount() {
         if (typeof window !== 'undefined') {
@@ -56,11 +63,13 @@ class Masonry extends Component {
         let columnsContent = [];
         while(col < cols) {
             const arrayContent = [];
-            for(let i = 0; i < arr.length; i += cols) {
+            for(let i = 0; i <= arr.length; i += cols) {
+                
                 let _val = arr[i + col];
                 if (_val !== undefined) {
                     arrayContent.push(_val);
                 }  
+                
             }
             col++;
             columnsContent.push(arrayContent);
@@ -69,11 +78,17 @@ class Masonry extends Component {
         this.setState({ cardColumns: columnsContent, cardsLoaded: true});
     }
 
-    // handleClickCard = (card) => {
-    //     this.setState({
-    //         cardActive: (this.state.cardActive !== card) ? card : false
-    //     })
-    // }
+    handleClickLoadMore = () => {
+        const maxCards = this.state.maxCards;
+        const newMaxCards = maxCards + 3;
+        this.setState({
+            maxCards: newMaxCards
+        });
+        const posts = this.state.OGcards;
+        const postLimitMax = posts.slice(0,newMaxCards);
+        this.setState({cardsWithLimit: postLimitMax});
+        this.reorder(postLimitMax, this.state.columns);
+    }
     
     render() {
         let columns = <p>loading...</p>;
@@ -89,7 +104,9 @@ class Masonry extends Component {
             <div>
                 <div className="masonryWrapper">
                     {columns}
+                    
                 </div>
+                {this.state.OGcards > this.state.cardsWithLimit? <div className="center"><button className="btn" onClick={this.handleClickLoadMore}>Show more +</button></div> : null} 
             </div>
         );
     }
