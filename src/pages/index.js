@@ -18,7 +18,7 @@ export default class IndexPage extends React.Component {
           <div className="col-xs-12">
           
           <div className="content-padding">
-            <p className="bold ">Some of our work</p>
+            <h2 className="bold center">Some of our work</h2>
           </div>
           
           <Masonry posts={posts}/>
