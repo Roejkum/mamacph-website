@@ -10,12 +10,12 @@ import './Navbar.scss';
 const Navbar = () => (
   <nav className="navbar is-primary ">
     <div className="row">
-    <div className="col-xs-12 col-sm-8 col-sm-offset-2">
+    <div className="col-xs-12 col-sm-10 col-sm-offset-1">
       <div className="navbar-brand">
-        {/* <Link to="/" className="navbar-item">
+        <Link to="/" className="navbar-item">
           <img src={logo} alt="Kaldi" style={{ width: 'auto'}} />
           
-        </Link> */}
+        </Link>
       </div>
       <div className="navbar-end">
         <Link activeClassName="active" className="navbar-item has-text-black has-text-weight-bold" to="/web">
