@@ -17,13 +17,13 @@ class Masonry extends Component {
         if (typeof window !== 'undefined') {
             let winWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
             if (winWidth <= 600) {
-                this.reorder(this.props.posts, 1);
+                this.reorder(this.state.cardsWithLimit, 1);
                 this.setState({columns: 1});
             } else if (winWidth <= 900) {
-                this.reorder(this.props.posts, 2);
+                this.reorder(this.state.cardsWithLimit, 2);
                 this.setState({columns: 2});
             } else {
-                this.reorder(this.props.posts, 3);
+                this.reorder(this.state.cardsWithLimit, 3);
                 this.setState({columns: 3});
             }
         }
@@ -106,7 +106,7 @@ class Masonry extends Component {
                     {columns}
                     
                 </div>
-                <div className="center"><button className={this.state.OGcards > this.state.cardsWithLimit? 'btn': 'btn hidden' } onClick={this.handleClickLoadMore}>Show more +</button></div>
+                <div className="center"><button className={this.state.OGcards > this.state.cardsWithLimit? 'btn': 'btn hidden' } onClick={this.handleClickLoadMore}>Show more <span class="large">+</span></button></div>
                 
             </div>
         );
