@@ -29,11 +29,13 @@ section {
 .bg-primary {
   background: $primary;
 }
-
+.secondary {
+  color: $signal;
+}
 body {
   margin: 0;}
 h2, h3, h4, h5 {
-  color: $signal!important;
+  color: $signal;
 }
 img{
   width: 100%;
