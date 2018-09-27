@@ -38,13 +38,6 @@ const Navbar = () => (
           Video
         </Link>
       </div>
-      {/* <div className="navbar-mobile">
-        <button className="navbarToggle collapsed">
-          <span className="icon-bar top-bar"></span>
-          <span className="icon-bar middle-bar"></span>
-          <span className="icon-bar bottom-bar"></span>
-        </button>
-      </div> */}
     </div>
     </div>
   </nav>
