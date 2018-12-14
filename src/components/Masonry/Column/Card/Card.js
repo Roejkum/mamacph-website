@@ -1,15 +1,17 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Img from "gatsby-image";
 
 const Card = (props) => {
    
     return (
     <div className="content contentMosaik">
-              <Link to={props.card.node.frontmatter.path}><img src={props.card.node.frontmatter.image} alt={props.card.node.frontmatter.title}/>
+              <Link to={props.card.node.frontmatter.path}>
+                <Img fluid={props.card.node.frontmatter.image.childImageSharp.fluid} alt={props.card.node.frontmatter.title} />
               
               <div className="mosaikElement">
                 <h3 className="bold mosaikTitle">      
-                    {props.card.node.frontmatter.title}
+                    {props.card.node.frontmatter.title} 
                 </h3>
                 <p className="caseSubtitle">
                   {props.card.node.frontmatter.manchet}

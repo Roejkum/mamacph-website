@@ -166,7 +166,16 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        image
+        image {
+          childImageSharp {
+            # Specify the image processing specifications right in the query.
+            # Makes it trivial to update as your page's design changes.
+            fluid {
+              sizes
+              srcSet
+            }
+          }
+        }
         heading
         description
         intro {

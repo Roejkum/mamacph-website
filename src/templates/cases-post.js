@@ -5,10 +5,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layouts/Layout';
 
 export const CasesPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
   image,
   title,
   manchet,
@@ -17,18 +13,18 @@ export const CasesPostTemplate = ({
 
   return (
     <Layout>
-    <section className="section">
+    <section>
       {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-12">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{manchet}</p>
-            <img src={image} alt={title}/>
-          </div>
-        </div>
+      <div className="container-fluid">
+        <div className="row">
+            <div className="col-xs-12 col-sm-10 col-sm-offset-1">
+              <h1>
+                {title}
+              </h1>
+              <p>{manchet}</p>
+              <img src={image} alt={title}/>
+            </div>
+            </div>
       </div>
     </section>
     </Layout>
@@ -69,13 +65,19 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
         manchet
-        heading
-        image
+        image {
+          childImageSharp {
+            # Specify the image processing specifications right in the query.
+            # Makes it trivial to update as your page's design changes.
+            fluid {
+              sizes
+              srcSet
+            }
+          }
+        }
         path
-        tags
       }
     }
   }

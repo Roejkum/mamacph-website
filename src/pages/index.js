@@ -23,10 +23,13 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    // console.log(posts);
+    const { edges: images } = data.allImageSharp
+    
     return (
       <Layout>
         <Jumbotron />
+      
+      
       <section className="section-fullwidth section">
         <div className="row">
           <div className="col-xs-12">
@@ -34,15 +37,16 @@ export default class IndexPage extends React.Component {
           <div className="content-padding">
             <h2 className="bold center secondary">Some of our work</h2>
           </div>
-          <Masonry posts={posts}/>
+          <Masonry posts={posts} images={images}/>
         </div>
           </div>
       </section>
       <section>
-        <div className="content-padding">
+      <div className="row middle-xs clientlogoes">
+        <div className="col-xs-12">
             <h2 className="bold center secondary">Trusted by</h2>
           </div>
-        <div className="row middle-xs clientlogoes content-padding">
+        
         
           <div className="col-xs-4 col-sm-2"><img src={dlfLogo}/></div>
           <div className="col-xs-4 col-sm-2"><img src={egmontLogo}/></div>
@@ -82,18 +86,33 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
-          id
           fields {
             slug
           }
           frontmatter {
             title
-            image
+            image {
+              childImageSharp {
+                # Specify the image processing specifications right in the query.
+                # Makes it trivial to update as your page's design changes.
+                fluid {
+                  sizes
+                  srcSet
+                  aspectRatio
+                }
+              }
+            }
             path
-            templateKey
             manchet
-            date(formatString: "MMMM DD, YYYY")
+          }
+        }
+      }
+    }
+    allImageSharp {
+      edges {
+        node {
+          fluid {
+            srcSet 
           }
         }
       }

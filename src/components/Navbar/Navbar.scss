@@ -1,11 +1,11 @@
 //toggle
-@import '../../utils/variables.scss';
+@import '../Layouts/scss/variables/variables';
 .navbar {
-  // position: fixed !important;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   z-index: 600 !important;
-  // box-shadow: 0px 0px 20px $primary;
 }
 .navbar-mobile{
   position: absolute;
