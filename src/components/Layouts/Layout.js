@@ -11,6 +11,7 @@ const Layout = ({ children }) => (
       <meta name="description" content="Web design - web developmemt " />
       <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
     </Helmet>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
     <Navbar />
     
     <div className="page-content">
