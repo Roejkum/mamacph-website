@@ -7,7 +7,7 @@ const Jumbotron = (props) => {
    
     return (
         <section className="jumbotron">
-            <img src={Img} className="jumbotron-image" alt="Jumbotron background image"/>
+            <img src={Img} className="jumbotron-image" alt="Jumbotron background"/>
             <div className="jumbtron-bg jumbotron-content">
             <div className="row">
                 <div className="col-xs-12 col-sm-6 col-sm-offset-1">

@@ -7,7 +7,7 @@ const Card = (props) => {
     return (
     <div className="content contentMosaik">
               <Link to={props.card.node.frontmatter.path}>
-                <Img fluid={props.card.node.frontmatter.image.childImageSharp.fluid} alt={props.card.node.frontmatter.title} />
+                <Img fluid={props.card.node.frontmatter.image.childImageSharp.fluid} fadeIn backgroundColor="black" alt={props.card.node.frontmatter.title} />
               
               <div className="mosaikElement">
                 <h3 className="bold mosaikTitle">      

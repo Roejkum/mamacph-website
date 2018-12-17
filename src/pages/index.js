@@ -23,7 +23,6 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    const { edges: images } = data.allImageSharp
     
     return (
       <Layout>
@@ -37,7 +36,7 @@ export default class IndexPage extends React.Component {
           <div className="content-padding">
             <h2 className="bold center secondary">Some of our work</h2>
           </div>
-          <Masonry posts={posts} images={images}/>
+          <Masonry posts={posts} />
         </div>
           </div>
       </section>
@@ -48,21 +47,21 @@ export default class IndexPage extends React.Component {
           </div>
         
         
-          <div className="col-xs-4 col-sm-2"><img src={dlfLogo}/></div>
-          <div className="col-xs-4 col-sm-2"><img src={egmontLogo}/></div>
+          <div className="col-xs-4 col-sm-2"><img src={dlfLogo} alt="DLF logo"/></div>
+          <div className="col-xs-4 col-sm-2"><img src={egmontLogo} alt="Egmont logo"/></div>
           
-          <div className="col-xs-4 col-sm-2"><img src={FLogo}/></div>
-          <div className="col-xs-4 col-sm-2"><img src={fivuLogo}/></div>
-          <div className="col-xs-4 col-sm-2"><img src={kbhLogo}/></div>
-          <div className="col-xs-4 col-sm-2"><img src={miljoeLogo}/></div>
+          <div className="col-xs-4 col-sm-2"><img src={FLogo} alt="F logo"/></div>
+          <div className="col-xs-4 col-sm-2"><img src={fivuLogo} alt="Ministeriet for forskning og innovation logo"/></div>
+          <div className="col-xs-4 col-sm-2"><img src={kbhLogo} alt="Københavns Kommune logo"/></div>
+          <div className="col-xs-4 col-sm-2"><img src={miljoeLogo} alt="Miljøstyrelsen logo"/></div>
 
-          <div className="col-xs-4 col-sm-2"><img src={fbLogo}/></div>
-          <div className="col-xs-4 col-sm-2"><img src={cowiLogo}/></div>
-          <div className="col-xs-4 col-sm-2"><img src={energiLogo}/></div>
+          <div className="col-xs-4 col-sm-2"><img src={fbLogo} alt="Facebook logo"/></div>
+          <div className="col-xs-4 col-sm-2"><img src={cowiLogo} alt="COWI logo"/></div>
+          <div className="col-xs-4 col-sm-2"><img src={energiLogo} alt="Klima-, Energi- og forsyningsministeriet logo"/></div>
           
-          <div className="col-xs-4 col-sm-2"><img src={dlgLogo}/></div>
-          <div className="col-xs-4 col-sm-2"><img src={dsbLogo}/></div>
-          <div className="col-xs-4 col-sm-2"><img src={panasonicLogo}/></div>
+          <div className="col-xs-4 col-sm-2"><img src={dlgLogo} alt="DLG logo"/></div>
+          <div className="col-xs-4 col-sm-2"><img src={dsbLogo} alt="DSB logo"/></div>
+          <div className="col-xs-4 col-sm-2"><img src={panasonicLogo} alt="Panasonic logo"/></div>
         </div>
       </section>
       </Layout>
@@ -96,23 +95,14 @@ export const pageQuery = graphql`
                 # Specify the image processing specifications right in the query.
                 # Makes it trivial to update as your page's design changes.
                 fluid {
-                  sizes
                   srcSet
                   aspectRatio
+                  base64
                 }
               }
             }
             path
             manchet
-          }
-        }
-      }
-    }
-    allImageSharp {
-      edges {
-        node {
-          fluid {
-            srcSet 
           }
         }
       }
