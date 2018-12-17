@@ -98,6 +98,7 @@ export const pageQuery = graphql`
                   srcSet
                   aspectRatio
                   base64
+                  srcSetWebp
                 }
               }
             }
