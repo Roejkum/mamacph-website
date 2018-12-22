@@ -1,7 +1,7 @@
 ---
 templateKey: cases-post
 path: /ennycase!
-image: /img/frederiksberg.png
+image: /img/frederiksberg.jpg
 title: Frederiksberg Bibliotek
 manchet: Video af bla bla bla bla
 heading: En overskrift!
