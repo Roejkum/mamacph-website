@@ -101,14 +101,16 @@ class Masonry extends Component {
                         handleClickCard={this.handleClickCard} />
         });
         return (
-            <div>
+            <>
                 <div className="masonryWrapper">
-                    {columns}
-                    
+                    {columns}   
                 </div>
-                <div className={this.state.OGcards > this.state.cardsWithLimit? 'center': 'center hidden' }><button className={this.state.OGcards > this.state.cardsWithLimit? 'btn': 'btn hidden' } onClick={this.handleClickLoadMore}>Show more +</button></div>
-                
-            </div>
+                <div className={this.state.OGcards > this.state.cardsWithLimit? 'center': 'center hidden' }>
+                    <button className={this.state.OGcards > this.state.cardsWithLimit? 'btn': 'btn hidden' } onClick={this.handleClickLoadMore}>
+                        Show more +
+                    </button>
+                </div>
+            </>
         );
     }
 }

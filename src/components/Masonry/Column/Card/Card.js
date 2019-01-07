@@ -8,7 +8,6 @@ const Card = (props) => {
     <div className="content contentMosaik">
               <Link to={props.card.node.frontmatter.path}>
                 <Img fluid={props.card.node.frontmatter.image.childImageSharp.fluid} backgroundColor="rgb(206, 199, 203)" alt={props.card.node.frontmatter.title} />
-              
               <div className="mosaikElement">
                 <h3 className="bold mosaikTitle">      
                     {props.card.node.frontmatter.title} 
