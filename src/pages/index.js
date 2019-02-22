@@ -29,17 +29,7 @@ export default class IndexPage extends React.Component {
         <Jumbotron />
       
       
-      <section className="section-fullwidth section">
-        <div className="row">
-          <div className="col-xs-12">
-          
-          <div className="content-padding">
-            <h2 className="bold center secondary">Some of our work</h2>
-          </div>
-          <Masonry posts={posts} />
-        </div>
-          </div>
-      </section>
+      
       <section>
       <div className="row middle-xs clientlogoes">
         <div className="col-xs-12">
@@ -63,6 +53,17 @@ export default class IndexPage extends React.Component {
           <div className="col-xs-4 col-sm-2"><img src={dsbLogo} alt="DSB logo"/></div>
           <div className="col-xs-4 col-sm-2"><img src={panasonicLogo} alt="Panasonic logo"/></div>
         </div>
+      </section>
+      <section className="section-fullwidth section">
+        <div className="row">
+          <div className="col-xs-12">
+          
+          <div className="content-padding">
+            <h2 className="bold center secondary">Some of our work</h2>
+          </div>
+          <Masonry posts={posts} />
+        </div>
+          </div>
       </section>
       </Layout>
     )
