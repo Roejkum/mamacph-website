@@ -1,90 +1,112 @@
 //toggle
 @import '../Layouts/scss/variables/variables';
-.navbar {
-  position: absolute;
-  top: 0;
+
+.brand {
+  position: fixed;
+  top: 2rem;
   left: 0;
-  width: 100%;
-  z-index: 600 !important;
-}
-.navbar-mobile{
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 52px;
-  display: none;
-}
-.icon-menu{
-  display: none;
-}
-.navbar {
- background-color: transparent;
-  padding: 0 1.5rem;
-  box-sizing: border-box;
-}
-.navbar .row .col-xs-12 {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-}
-.navbar-brand img {
-  height: 40px;
-}
-.navbar-brand a{
+  transform: rotate(-90deg) translate(-100%, 0);
+  transform-origin: left top;
+  z-index: 100;
   display: block;
-  padding-left: 0;
-}
-.navbar-item {
-  padding: 15px;
-}
-.navbar-end {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.navbar-brand{
-  line-height: 0;
-}
-@media screen and (max-width: 767px){
-  .page-content{
-    padding-top: 0px;}
-  .navbar-mobile{
-    display: flex;}
-  .navbar-end{
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    transition: height 0.4s ease;
-    width: 100%;}
-  .navbar .row .col-xs-12{
-    display: flex !important;
-    align-items: flex-end  !important;}
-  .navbar {
-    top: auto;
-    bottom: 0;
-    padding: 0;
-    background-color: $primary;
-    position: fixed;
-    box-shadow: 0px 0px 20px $primary;}
-  .navbar-brand{
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;}
-  .navbar-end .navbar-item {
-    font-size: 0.9rem;
-    text-align: center;
-    flex: 1;
-    padding: 10px 0;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-bottom: constant(safe-area-inset-bottom);
+
+  img {
+    width: 7.5rem;
   }
-  .icon-menu {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin: auto;}
-  .icon-menu img{
-    width: 100%;}
+
+  @media screen and (max-width: 48rem) {
+    transform: none;
+    top: 0;
+    left: 1rem;
+  }
 }
+
+
+// .navbar {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 600 !important;
+// }
+// .navbar-mobile{
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   height: 52px;
+//   display: none;
+// }
+// .icon-menu{
+//   display: none;
+// }
+// .navbar {
+//  background-color: transparent;
+//   padding: 0 1.5rem;
+//   box-sizing: border-box;
+// }
+// .navbar .row .col-xs-12 {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 0;
+// }
+// .navbar-brand img {
+//   height: 40px;
+// }
+// .navbar-brand a{
+//   display: block;
+//   padding-left: 0;
+// }
+// .navbar-item {
+//   padding: 15px;
+// }
+// .navbar-end {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+// }
+// .navbar-brand{
+//   line-height: 0;
+// }
+// @media screen and (max-width: 767px){
+//   .page-content{
+//     padding-top: 0px;}
+//   .navbar-mobile{
+//     display: flex;}
+//   .navbar-end{
+//     display: flex;
+//     justify-content: space-around;
+//     overflow: hidden;
+//     transition: height 0.4s ease;
+//     width: 100%;}
+//   .navbar .row .col-xs-12{
+//     display: flex !important;
+//     align-items: flex-end  !important;}
+//   .navbar {
+//     top: auto;
+//     bottom: 0;
+//     padding: 0;
+//     background-color: $primary;
+//     position: fixed;
+//     box-shadow: 0px 0px 20px $primary;}
+//   .navbar-brand{
+//     position: fixed;
+//     top: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     display: none;}
+//   .navbar-end .navbar-item {
+//     font-size: 0.9rem;
+//     text-align: center;
+//     flex: 1;
+//     padding: 10px 0;
+//     padding-bottom: env(safe-area-inset-bottom);
+//     padding-bottom: constant(safe-area-inset-bottom);
+//   }
+//   .icon-menu {
+//     display: block;
+//     width: 1.5rem;
+//     height: 1.5rem;
+//     margin: auto;}
+//   .icon-menu img{
+//     width: 100%;}
+// }
