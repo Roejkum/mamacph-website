@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layouts/Layout';
+import Img from "gatsby-image";
 
 export const CasesPostTemplate = ({
   image,
@@ -11,20 +12,24 @@ export const CasesPostTemplate = ({
   helmet,
 }) => {
 
+
   return (
     <Layout>
-    <section>
+    <section className="no-padding">
       {helmet || ''}
-      <div className="container-fluid">
-        <div className="row">
-            <div className="col-xs-12 col-sm-10 col-sm-offset-1">
+      <div className="container-fluid wrap">
+        <div className="row vh-100 middle-xs">
+            <div className="col-xs-12 col-sm-6 ">
               <h1>
                 {title}
               </h1>
               <p>{manchet}</p>
-              <img src={image} alt={title}/>
+              
             </div>
+            <div className="col-xs-12 col-sm-6">
+              <Img fluid={image.childImageSharp.fluid} alt={title}/>
             </div>
+          </div>
       </div>
     </section>
     </Layout>
@@ -74,6 +79,8 @@ export const pageQuery = graphql`
             fluid {
               sizes
               srcSet
+              aspectRatio
+              src
             }
           }
         }

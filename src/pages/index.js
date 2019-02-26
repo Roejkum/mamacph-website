@@ -31,6 +31,7 @@ export default class IndexPage extends React.Component {
       
       
       <section>
+        <div className="container-fluid">
       <div className="row middle-xs clientlogoes">
         <div className="col-xs-12">
             <h2 className="bold center secondary">Trusted by</h2>
@@ -52,6 +53,7 @@ export default class IndexPage extends React.Component {
           <div className="col-xs-4 col-sm-2"><img src={dlgLogo} alt="DLG logo"/></div>
           <div className="col-xs-4 col-sm-2"><img src={dsbLogo} alt="DSB logo"/></div>
           <div className="col-xs-4 col-sm-2"><img src={panasonicLogo} alt="Panasonic logo"/></div>
+        </div>
         </div>
       </section>
       <section className="section-fullwidth section">
@@ -99,6 +101,7 @@ export const pageQuery = graphql`
                   sizes
                   srcSet
                   aspectRatio
+                  src
                 }
               }
             }

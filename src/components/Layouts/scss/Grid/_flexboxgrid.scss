@@ -1,5 +1,13 @@
 /* Uncomment and set these variables to customize the grid. */
-
+.vh-100 {
+  min-height: 100vh;
+}
+.no-padding {
+  padding: 0;
+}
+.flex {
+  display: flex;
+}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -7,11 +15,11 @@
   padding-left: 2rem;
 }
 
-// .container {
-//   box-sizing: border-box;
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   }
+.wrap {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
 
 .row {
   box-sizing: border-box;
@@ -298,8 +306,8 @@
 
   .col-sm-2 {
     -ms-flex-preferred-size: 16.667%;
-    flex-basis: 16.667%;
-    max-width: 16.667%;
+    flex-basis: 16.666%;
+    max-width: 16.666%;
   }
 
   .col-sm-3 {
