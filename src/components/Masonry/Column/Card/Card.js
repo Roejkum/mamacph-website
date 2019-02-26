@@ -3,7 +3,6 @@ import Img from "gatsby-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Card = (props) => {
-   console.log(props.card.node.frontmatter.image.childImageSharp.fluid);
     return (
     <div className="content contentMosaik">
               <AniLink paintDrip duration={1} to={props.card.node.frontmatter.path} hex="#340d6a">

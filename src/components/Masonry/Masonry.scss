@@ -52,7 +52,7 @@ h3.mosaikTitle {
   line-height: 1.5;
 }
 .gradiant {
-  width: 120%;
+  width: 100%;
   height: 100%;
   position: absolute;
   z-index: 200;
@@ -79,7 +79,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 @media (hover: hover) {
     .contentMosaik:hover {
         transform: translateY(-10px);
-        transition: all 0.4s ease;
+        transition: transform 0.4s ease;
         box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
     }
 }

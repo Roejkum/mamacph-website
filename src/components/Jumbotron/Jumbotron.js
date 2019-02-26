@@ -8,7 +8,7 @@ const Jumbotron = (props) => {
     return (
         <section className="jumbotron">
             <img src={Img} className="jumbotron-image" alt="Jumbotron background"/>
-            <div className="jumbtron-bg jumbotron-content">
+            <div className="jumbtron-bg jumbotron-content container-fluid">
             <div className="row">
                 <div className="col-xs-12 col-sm-6 col-sm-offset-1">
                     <h1 className="jumbotron-heading">
@@ -23,7 +23,7 @@ const Jumbotron = (props) => {
                             </div>
                         </span>
                     </h1>
-                    <Link to="#contact" className="btn">Get in touch</Link>
+                    <a href="mailto:mama@mamacph.dk" className="btn">Get in touch</a>
                 </div>
                 <div className="col-xs-12 hidden-xs col-sm-5">
                     <div className="browser none">
