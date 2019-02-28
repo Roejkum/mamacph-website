@@ -31,7 +31,7 @@
     "lodash": "^4.17.11",
     "lodash-webpack-plugin": "^0.11.4",
     "moment": "^2.23.0",
-    "netlify-cms": "^2.3.1",
+    "netlify-cms": "^2.5.0",
     "netlify-cms-lib-auth": "^2.0.5",
     "netlify-cms-lib-util": "^2.1.1",
     "netlify-cms-ui-default": "^2.1.1",
@@ -49,7 +49,7 @@
     "typography-theme-kirkham": "^0.16.18",
     "typography-theme-ocean-beach": "^0.15.11",
     "uuid": "^3.2.1",
-    "webpack": "^4.27.1"
+    "webpack": "^4.29.6"
   },
   "keywords": [
     "gatsby"
