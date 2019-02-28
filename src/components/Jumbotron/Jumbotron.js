@@ -14,16 +14,16 @@ const Jumbotron = (props) => {
                     <h1 className="jumbotron-heading">
                         <span className="css-fisw11">
                             <span className="css-3w0cwq">
-                                We design and build
+                                Visuel kommunikation:
                             </span>
                             <div className="slidingVertical">
-                                <span >beautiful animations</span>
-                                <span >fast websites</span>
-                                <span >interactive products</span>
+                                <span>lynhurtige websites</span>
+                                <span>indbydende animationer</span>
+                                <span>grafisk design</span>
                             </div>
                         </span>
                     </h1>
-                    <a href="mailto:mama@mamacph.dk" className="btn">Get in touch</a>
+                    <a href="mailto:mama@mamacph.dk" className="btn">Kontakt os</a>
                 </div>
                 <div className="col-xs-12 hidden-xs col-sm-5">
                     <div className="browser none">

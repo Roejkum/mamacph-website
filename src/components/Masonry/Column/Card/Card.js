@@ -5,7 +5,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 const Card = (props) => {
     return (
     <div className="content contentMosaik">
-              <AniLink paintDrip duration={1} to={props.card.node.frontmatter.path} hex="#340d6a">
+              <AniLink paintDrip duration={0.5} to={props.card.node.frontmatter.path} hex="#340d6a">
                 <Img fluid={props.card.node.frontmatter.image.childImageSharp.fluid} backgroundColor="rgb(206, 199, 203)" alt={props.card.node.frontmatter.title} />
               <div className="mosaikElement">
                 <h3 className="bold mosaikTitle">      

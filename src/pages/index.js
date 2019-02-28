@@ -34,7 +34,7 @@ export default class IndexPage extends React.Component {
         <div className="container-fluid">
       <div className="row middle-xs clientlogoes">
         <div className="col-xs-12">
-            <h2 className="bold center secondary">Trusted by</h2>
+            <h2 className="bold center secondary">Referencer</h2>
           </div>
         
         
@@ -61,10 +61,37 @@ export default class IndexPage extends React.Component {
           <div className="col-xs-12">
           
           <div className="content-padding">
-            <h2 className="bold center secondary">Some of our work</h2>
+            <h2 className="bold center secondary">Vores cases</h2>
           </div>
           <Masonry posts={posts} />
         </div>
+          </div>
+      </section>
+
+      <section>
+      <div className="container-fluid">
+        <div className="row middle-xs clientlogoes">
+          <div className="col-xs-12 col-sm-6 col-sm-offset-3">
+          <h3 className="center">Hvem er vi?</h3>
+          <p className="center">
+          Vi designer og udvikler digitale interaktive løsninger og visuel kommunikation. Vi arbejder med at gøre nye teknologier tilgængelige på devices som brugerne allerede har, med det formål at skabe engagerende oplevelser.<br/><br/>
+
+Vi kommer gerne forbi og giver en demo eller snakker jeres muligheder igennem.
+Hvis vi har vækket din interesse kan du se vores kontaktinfo nedenfor 👇
+          </p><br/><br/>
+          <p className="center" >
+            Blågårdsgade 19, kld <br/>
+            2200 København N <br/>
+            CVR 34403139
+          </p>
+          <br/>
+          <p className="center bold">
+            <a href="tel:004523373724">+45 23 37 37 24</a><br/>
+            <a href="mailto:mama@mamacph.dk">mama@mamacph.dk</a>
+          </p>
+          
+          </div>
+          </div>
           </div>
       </section>
       </Layout>
