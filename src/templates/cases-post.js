@@ -5,13 +5,16 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layouts/Layout';
 import Img from "gatsby-image";
 
+
+
+
 export const CasesPostTemplate = ({
+  images,
   image,
   title,
   manchet,
   helmet,
 }) => {
-
 
   return (
     <Layout>
@@ -26,6 +29,7 @@ export const CasesPostTemplate = ({
               <p>{manchet}</p>
               
             </div>
+            
             <div className="col-xs-12 col-sm-6">
               <Img fluid={image.childImageSharp.fluid} alt={title}/>
             </div>
@@ -52,6 +56,7 @@ const CasesPost = ({ data }) => {
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       image={post.frontmatter.image}
+      images={post.frontmatter.images}
     />
   )
 }
