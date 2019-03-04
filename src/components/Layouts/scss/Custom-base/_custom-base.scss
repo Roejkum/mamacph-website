@@ -42,6 +42,35 @@ body {
     margin: 0;
     background-color: white;
 }
+.videoIframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.videoWrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    margin-top: 1rem;
+}
+@media screen and (min-width: 48rem) {
+.case {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+}
+.case-section {
+    padding: 2rem 0;
+    box-sizing: border-box;
+    
+    @media screen and (max-width: 48rem) {
+        padding-top: 4rem;
+    }    
+}
 
 h2,
 h3,
@@ -87,7 +116,7 @@ li {
     padding: 0 15px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 48rem) {
     .page-content {
         padding-top: 0px;
     }

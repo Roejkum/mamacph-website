@@ -20,9 +20,8 @@ collections:
       - {label: "Featured image", name: "image", widget: "image"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Manchet", name: "manchet", widget: "markdown"}
-      - {label: "Heading", name: "heading", widget: "string"}
+      - {label: "Video", name: "video", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Images", name: "images", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}, {label: "link", name: "link", widget: "string"}]}
   - name: "pages"
     label: "Pages"
     files:
