@@ -3,21 +3,21 @@
 
 .brand {
   position: fixed;
-  top: 2rem;
-  left: 0;
-  transform: rotate(-90deg) translate(-100%, 0);
-  transform-origin: left top;
-  z-index: 100;
-  display: block;
+  transform: none;
+  top: 0;
+  left: 2rem;
 
   img {
     width: 7.5rem;
   }
 
-  @media screen and (max-width: 48rem) {
-    transform: none;
-    top: 0;
-    left: 1rem;
+  @media screen and (min-width: 48rem) {
+    top: 2rem;
+    left: 0;
+    transform: rotate(-90deg) translate(-100%, 0);
+    transform-origin: left top;
+    z-index: 100;
+    display: block;
   }
 }
 

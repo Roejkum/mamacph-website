@@ -9,20 +9,20 @@ import Img from "gatsby-image";
 
 
 export const CasesPostTemplate = ({
-  images,
   image,
   title,
   manchet,
+  video,
   helmet,
 }) => {
 
   return (
     <Layout>
-    <section className="no-padding">
+    <section className="case-section">
       {helmet || ''}
-      <div className="container-fluid wrap">
+      <div className="container-fluid wrap case">
         <div className="row vh-100 middle-xs">
-            <div className="col-xs-12 col-sm-6 ">
+            <div className="col-xs-12 col-sm-6 col-md-6">
               <h1>
                 {title}
               </h1>
@@ -30,8 +30,14 @@ export const CasesPostTemplate = ({
               
             </div>
             
-            <div className="col-xs-12 col-sm-6">
+            <div className="col-xs-12 col-sm-6 col-md-6">
               <Img fluid={image.childImageSharp.fluid} alt={title}/>
+              
+                <div className="videoWrapper">
+                  <iframe className="videoIframe" src="" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div> 
+              
+
             </div>
           </div>
       </div>
@@ -42,7 +48,7 @@ export const CasesPostTemplate = ({
 
 CasesPostTemplate.propTypes = {
   title: PropTypes.string,
-  // helmet: PropTypes.instanceOf(Helmet),
+  helmet: PropTypes.instanceOf(Helmet),
   helmet: PropTypes.object,
 }
 
@@ -56,7 +62,6 @@ const CasesPost = ({ data }) => {
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       image={post.frontmatter.image}
-      images={post.frontmatter.images}
     />
   )
 }
@@ -76,7 +81,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        manchet
+        manchet 
         image {
           childImageSharp {
             # Specify the image processing specifications right in the query.
