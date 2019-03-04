@@ -42,17 +42,17 @@ export default class IndexPage extends React.Component {
           <div className="col-xs-4 col-sm-2"><img src={egmontLogo} alt="Egmont logo"/></div>
           
           <div className="col-xs-4 col-sm-2"><img src={FLogo} alt="F logo"/></div>
-          <div className="col-xs-4 col-sm-2"><img src={fivuLogo} alt="Ministeriet for forskning og innovation logo"/></div>
-          <div className="col-xs-4 col-sm-2"><img src={kbhLogo} alt="Københavns Kommune logo"/></div>
+          {/* <div className="col-xs-4 col-sm-2"><img src={fivuLogo} alt="Ministeriet for forskning og innovation logo"/></div> */}
+          {/* <div className="col-xs-4 col-sm-2"><img src={kbhLogo} alt="Københavns Kommune logo"/></div> */}
           <div className="col-xs-4 col-sm-2"><img src={miljoeLogo} alt="Miljøstyrelsen logo"/></div>
 
-          <div className="col-xs-4 col-sm-2"><img src={fbLogo} alt="Facebook logo"/></div>
+          {/* <div className="col-xs-4 col-sm-2"><img src={fbLogo} alt="Facebook logo"/></div> */}
           <div className="col-xs-4 col-sm-2"><img src={cowiLogo} alt="COWI logo"/></div>
           <div className="col-xs-4 col-sm-2"><img src={energiLogo} alt="Klima-, Energi- og forsyningsministeriet logo"/></div>
           
-          <div className="col-xs-4 col-sm-2"><img src={dlgLogo} alt="DLG logo"/></div>
-          <div className="col-xs-4 col-sm-2"><img src={dsbLogo} alt="DSB logo"/></div>
-          <div className="col-xs-4 col-sm-2"><img src={panasonicLogo} alt="Panasonic logo"/></div>
+          {/* <div className="col-xs-4 col-sm-2"><img src={dlgLogo} alt="DLG logo"/></div> */}
+          {/* <div className="col-xs-4 col-sm-2"><img src={dsbLogo} alt="DSB logo"/></div> */}
+          {/* <div className="col-xs-4 col-sm-2"><img src={panasonicLogo} alt="Panasonic logo"/></div> */}
         </div>
         </div>
       </section>

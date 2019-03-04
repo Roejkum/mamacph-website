@@ -33,14 +33,11 @@ export const CasesPostTemplate = ({
             <div className="col-xs-12 col-sm-6 col-md-6">
               <Img fluid={image.childImageSharp.fluid} alt={title}/>
                 { video ?
-                
                 <div className="videoWrapper">
                   <iframe className="videoIframe" src={video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div> 
                 : null }
-              
-
-            </div>
+              </div>
           </div>
       </div>
     </section>

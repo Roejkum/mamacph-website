@@ -13,12 +13,12 @@ const Jumbotron = (props) => {
                 <div className="col-xs-12 col-sm-6 col-sm-offset-1">
                     <h1 className="jumbotron-heading">
                         <span className="css-fisw11">
-                            <span className="css-3w0cwq">
-                                Visuel kommunikation:
+                            <span className="css-3w0cwq big">
+                                Design og udvikling
                             </span>
-                            <div className="slidingVertical">
+                            <div className="slidingVertical small">
                                 <span>lynhurtige websites</span>
-                                <span>indbydende animationer</span>
+                                <span>animationer</span>
                                 <span>grafisk design</span>
                             </div>
                         </span>
