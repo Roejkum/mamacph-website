@@ -4,12 +4,12 @@ path: /akfCase
 image: /img/assembly.jpg
 title: Case overskrift
 manchet: En manchet med uddybende beskrivelse
-heading: LOL
+tekst: dsdsds
 date: '2018-09-05T12:25:59+02:00'
-images:
-  - image: /img/flavor_wheel.jpg
-    link: 'https://mamacph.dk'
-  - image: /img/products-full-width.jpg
-    link: 'https://mamacph.dk'
 ---
+En test er **god**. se [her](https://mamacph.dk).
 
+* ds
+* sd
+* ds
+* ds
