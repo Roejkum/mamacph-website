@@ -72,7 +72,7 @@ export default class IndexPage extends React.Component {
       <div className="container-fluid">
         <div className="row middle-xs clientlogoes">
           <div className="col-xs-12 col-sm-6 col-sm-offset-3">
-          <h3 className="center">Hvem er vi?</h3>
+          <h2 className="center secondary">Hvem er vi?</h2>
           <p className="center">
           Vi designer og udvikler digitale interaktive løsninger og visuel kommunikation. Vi arbejder med at gøre nye teknologier tilgængelige på devices som brugerne allerede har, med det formål at skabe engagerende oplevelser.<br/><br/>
 
