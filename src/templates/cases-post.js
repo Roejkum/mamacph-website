@@ -28,7 +28,6 @@ export const CasesPostTemplate = ({
                 {title}
               </h1>
               <h3>{manchet}</h3>
-              <p>{tekst}</p>
               
             </div>
             
@@ -102,6 +101,7 @@ export const pageQuery = graphql`
               aspectRatio
               src
             }
+
           }
           publicURL
         }
