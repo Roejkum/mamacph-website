@@ -11,13 +11,13 @@ tekst: >-
   eller bakke aktivt op om kampen for en grønnere klimapolitik. 
 
 
+
+
   "Så er det nu" havde en målsætning om 100.000 underskrivere og initiativet
   blev lanceret med omtale i både Politiken og Berlinske. Vi designede og
   udviklede derfor en side, der kunne håndtere store mængder trafik og som kunne
   facilitere fortsat kommunikation med dem der ønskede at deltage aktivt i
   initiativet efterfølgende.
-
-
 
 
   > **Parter:**\
@@ -27,7 +27,7 @@ tekst: >-
   > Så er det nu
 
 
-  ****
+  - - -
 
 
   **Involvering:**\
