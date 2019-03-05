@@ -16,6 +16,27 @@ tekst: >-
   udviklede derfor en side, der kunne håndtere store mængder trafik og som kunne
   facilitere fortsat kommunikation med dem der ønskede at deltage aktivt i
   initiativet efterfølgende.
+
+
+
+
+  > **Parter:**\
+
+  > MAMA\
+
+  > Så er det nu
+
+
+  ****
+
+
+  **Involvering:**\
+
+  Design og udvikling af hjemmeside\
+
+  Teknisk opsætning af fortsat mailkommunikation\
+
+  Google Analytics / Facebook pixel integration til målrettet kommunikation
 date: 2019-03-05T10:36:16.531Z
 ---
 
