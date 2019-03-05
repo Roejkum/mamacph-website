@@ -12,6 +12,7 @@ export const CasesPostTemplate = ({
   image,
   title,
   manchet,
+  tekst,
   video,
   helmet,
 }) => {
@@ -26,7 +27,8 @@ export const CasesPostTemplate = ({
               <h1>
                 {title}
               </h1>
-              <p>{manchet}</p>
+              <h3>{manchet}</h3>
+              <p>{tekst}</p>
               
             </div>
             
@@ -88,6 +90,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         manchet 
+        tekst
         video
         image {
           childImageSharp {
@@ -99,7 +102,6 @@ export const pageQuery = graphql`
               aspectRatio
               src
             }
-            
           }
           publicURL
         }
