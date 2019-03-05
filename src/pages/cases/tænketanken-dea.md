@@ -1,10 +1,15 @@
 ---
 templateKey: cases-post
-path: /taenketanken-dea
-image: /img/dea.gif
-title: Tænketanken Dea
-manchet: KAMPAGNESITE TIL SMÅBØRNSLØFTET
-video: ''
-date: 2019-03-05T08:53:35.480Z
+path: /småbørnsløftet
+image: >-
+  https://raw.githubusercontent.com/Roejkum/gatsby-netlify/master/static/img/dea.gif
+title: Tænketanken DEA
+manchet: Hjemmeside
+tekst: >-
+  Hjemmesiden blev designet og udviklet for DEA. Udgangspunktet var et ønske om
+  at foreninger, politikere og privatpersoner skulle have mulighed for at
+  engagere sig aktivt i kampen om at give alle børn samme chancer for at trives,
+  lære og udvikle sig.
+date: 2019-03-05T12:44:15.397Z
 ---
 
