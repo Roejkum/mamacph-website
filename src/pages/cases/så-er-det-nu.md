@@ -20,7 +20,7 @@ tekst: >-
   initiativet efterfølgende.
 
 
-  > **Parter:**\
+  > **Parter:
 
   > MAMA\
 
