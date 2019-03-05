@@ -12,22 +12,23 @@ export const CasesPostTemplate = ({
   image,
   title,
   manchet,
+  tekst,
   video,
   helmet,
 }) => {
 
   return (
     <Layout>
-    <section className="case-section">
+    <section>
       {helmet || ''}
       <div className="container-fluid wrap case">
-        <div className="row vh-100 middle-xs">
+        <div className="row vh-100 middle-xs case-row">
             <div className="col-xs-12 col-sm-6 col-md-6">
-              <h1>
+              <h1 className="secondary">
                 {title}
               </h1>
-              <h3>{manchet}</h3>
-              
+              <h4 className="secondary">{manchet}</h4>
+              <p>{tekst}</p>
             </div>
             
             <div className="col-xs-12 col-sm-6 col-md-6">
@@ -63,6 +64,7 @@ const CasesPost = ({ data }) => {
   return (
     <CasesPostTemplate
       manchet={post.frontmatter.manchet}
+      tekst={post.frontmatter.tekst}
       helmet={<Helmet title={`${post.frontmatter.title} | Cases`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
@@ -88,6 +90,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         manchet 
+        tekst
         video
         image {
           childImageSharp {

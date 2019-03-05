@@ -30,7 +30,7 @@ export default class IndexPage extends React.Component {
       
       
       
-      <section>
+      <section className="section">
         <div className="container-fluid">
       <div className="row middle-xs clientlogoes">
         <div className="col-xs-12">
@@ -68,7 +68,7 @@ export default class IndexPage extends React.Component {
           </div>
       </section>
 
-      <section>
+      <section  className="section">
       <div className="container-fluid">
         <div className="row middle-xs clientlogoes">
           <div className="col-xs-12 col-sm-6 col-sm-offset-3">
