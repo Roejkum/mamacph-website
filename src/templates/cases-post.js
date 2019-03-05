@@ -12,7 +12,6 @@ export const CasesPostTemplate = ({
   image,
   title,
   manchet,
-  tekst,
   video,
   helmet,
 }) => {
@@ -89,7 +88,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         manchet 
-        tekst
         video
         image {
           childImageSharp {
