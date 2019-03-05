@@ -12,7 +12,7 @@ export const CasesPostTemplate = ({
   image,
   title,
   manchet,
-  tekst,
+  body,
   video,
   helmet,
 }) => {
@@ -28,7 +28,7 @@ export const CasesPostTemplate = ({
                 {title}
               </h1>
               <h4 className="secondary">{manchet}</h4>
-              <p>{tekst}</p>
+              <div dangerouslySetInnerHTML={{ __html: body }} />
             </div>
             
             <div className="col-xs-12 col-sm-6 col-md-6">
@@ -64,7 +64,7 @@ const CasesPost = ({ data }) => {
   return (
     <CasesPostTemplate
       manchet={post.frontmatter.manchet}
-      tekst={post.frontmatter.tekst}
+      body={post.html}
       helmet={<Helmet title={`${post.frontmatter.title} | Cases`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
