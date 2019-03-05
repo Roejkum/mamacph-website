@@ -17,7 +17,7 @@ collections:
       - {label: "Featured image", name: "image", widget: "image"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Manchet", name: "manchet", widget: "markdown"}
-      - {label: "Video", name: "video", widget: "string"}
+      - {label: "Video", name: "video", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
   - name: "pages"
     label: "Pages"

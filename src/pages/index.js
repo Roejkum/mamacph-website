@@ -131,6 +131,7 @@ export const pageQuery = graphql`
                   src
                 }
               }
+              publicURL
             }
             path
             manchet
