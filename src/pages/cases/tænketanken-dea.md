@@ -1,6 +1,6 @@
 ---
 templateKey: cases-post
-path: /smobornloftet
+path: /smobornsloftet
 image: /img/dea.gif
 title: Tænketanken DEA
 manchet: Website
