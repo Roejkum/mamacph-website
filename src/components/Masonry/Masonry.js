@@ -6,7 +6,7 @@ class Masonry extends Component {
     
         state = {
             columns: null,
-            maxCards: 3,
+            maxCards: 6,
             cardColumns: [],
             cardsLoaded: false,
             OGcards: this.props.posts,
