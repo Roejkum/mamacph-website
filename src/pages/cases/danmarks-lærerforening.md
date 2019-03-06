@@ -1,6 +1,6 @@
 ---
 templateKey: cases-post
-path: /danmarkslærerforening
+path: /danmarks-laererforening
 image: /img/danmarkslærerforening.jpg
 title: Danmarks Lærerforening
 manchet: Design af publikation
