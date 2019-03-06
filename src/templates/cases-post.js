@@ -17,6 +17,13 @@ export const CasesPostTemplate = ({
   helmet,
 }) => {
 
+  let imageJsx;
+  if(image.childImageSharp) {
+    imageJsx = <Img fluid={image.childImageSharp.fluid} alt={title}/>;
+  } else {
+    imageJsx= <img src={image.publicURL} alt={title}/>;
+  }
+
   return (
     <Layout>
     <section>
@@ -29,16 +36,9 @@ export const CasesPostTemplate = ({
               </h1>
               <h4 className="secondary">{manchet}</h4>
               <div dangerouslySetInnerHTML={{ __html: body }} />
-            </div>
-            
+            </div> 
             <div className="col-xs-12 col-sm-6 col-md-6">
-              { image.childImageSharp ? 
-                <Img fluid={image.childImageSharp.fluid} alt={title}/>
-               : 
-                <img src={image.publicURL} alt={title}/>
-              }
-              
-              
+              { imageJsx }
                 { video ?
                 <div className="videoWrapper">
                   <iframe className="videoIframe" src={video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -60,7 +60,7 @@ CasesPostTemplate.propTypes = {
 
 const CasesPost = ({ data }) => {
   const { markdownRemark: post } = data
-
+  
   return (
     <CasesPostTemplate
       manchet={post.frontmatter.manchet}
