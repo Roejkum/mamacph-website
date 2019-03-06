@@ -1,15 +1,10 @@
 ---
 templateKey: cases-post
-path: /akfCase
+path: /assembly-voting
 image: /img/assembly.jpg
-title: Case overskrift
-manchet: En manchet med uddybende beskrivelse
-tekst: dsdsds
+title: Assembly Voting
+manchet: Animeret explainer-video
+video: 'https://player.vimeo.com/video/265177363'
 date: '2018-09-05T12:25:59+02:00'
 ---
-En test er **god**. se [her](https://mamacph.dk).
-
-* ds
-* sd
-* ds
-* ds
+Assembly Voting er en frontløber i udbredelsen af digitale valg med det formål at højne kvaliteten af vores demokrati. Til udbredelsen af deres løsning Nem Generalforsamling tegnede og producerede vi en explainer-video til brug på digitale platforme.
