@@ -1,6 +1,6 @@
 ---
 templateKey: cases-post
-path: /småbørnsløftet
+path: /smobornloftet
 image: >-
   https://raw.githubusercontent.com/Roejkum/gatsby-netlify/master/static/img/dea.gif
 title: Tænketanken DEA
