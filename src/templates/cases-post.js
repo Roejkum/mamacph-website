@@ -16,7 +16,6 @@ export const CasesPostTemplate = ({
   video,
   helmet,
 }) => {
-  console.log(image);
   let imageJsx;
   if( image.childImageSharp !== null ) {
     imageJsx = <Img fluid={image.childImageSharp.fluid} alt={title}/>;
@@ -83,8 +82,9 @@ CasesPost.propTypes = {
 export default CasesPost
 
 export const pageQuery = graphql`
-  query CasesPostByID {
-    markdownRemark {
+  query CasesPostByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
       html
       frontmatter {
         title
