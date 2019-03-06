@@ -4,9 +4,13 @@ import Layout from '../components/Layouts/Layout';
 
 const NotFoundPage = () => (
   <Layout>
-    <div>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className="container">
+      <div className="row">
+        <div className="col-xs-12">
+          <h1>Siden kunne ikke findes :(</h1>
+        </div>
+      </div>
+      
     </div>
   </Layout>
 )
