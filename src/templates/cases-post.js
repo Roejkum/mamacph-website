@@ -89,7 +89,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         manchet 
-        tekst
         video
         image {
           childImageSharp {
