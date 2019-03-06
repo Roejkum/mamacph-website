@@ -12,8 +12,4 @@ Mødrehjælpen arbjeder for at støtte børnefamiliers vilkår og hjælper børn
 Design og udvikling af webshop\
 Teknisk opsætning af donationsmulighed for private
 
-> **Parter:**
->
->  
->
-> MAMA // Mødrehjælpen
+> **Parter:** MAMA // Mødrehjælpen
