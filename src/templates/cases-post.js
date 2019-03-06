@@ -16,9 +16,9 @@ export const CasesPostTemplate = ({
   video,
   helmet,
 }) => {
-
+  console.log(image);
   let imageJsx;
-  if(image.childImageSharp) {
+  if( image.childImageSharp !== null ) {
     imageJsx = <Img fluid={image.childImageSharp.fluid} alt={title}/>;
   } else {
     imageJsx= <img src={image.publicURL} alt={title}/>;
@@ -54,7 +54,7 @@ export const CasesPostTemplate = ({
 
 CasesPostTemplate.propTypes = {
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
+  // helmet: PropTypes.instanceOf(Helmet),
   helmet: PropTypes.object,
 }
 
