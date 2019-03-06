@@ -83,9 +83,8 @@ CasesPost.propTypes = {
 export default CasesPost
 
 export const pageQuery = graphql`
-  query CasesPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
+  query CasesPostByID {
+    markdownRemark {
       html
       frontmatter {
         title
