@@ -1,8 +1,7 @@
 ---
 templateKey: cases-post
 path: /smobornloftet
-image: >-
-  https://raw.githubusercontent.com/Roejkum/gatsby-netlify/master/static/img/chemex.jpg
+image: /img/dea.gif
 title: Tænketanken DEA
 manchet: Hjemmeside
 tekst: >-

@@ -4,7 +4,8 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Card = (props) => {
   let image;
-  if(props.card.node.frontmatter.image.childImageSharp) {
+  console.log(props.card.node.frontmatter.image);
+  if(props.card.node.frontmatter.image.childImageSharp !== null ) {
     image = <Img fluid={props.card.node.frontmatter.image.childImageSharp.fluid} backgroundColor="rgb(206, 199, 203)" alt={props.card.node.frontmatter.title} />;
   } else {
     image = <img src={props.card.node.frontmatter.image.publicURL} alt={props.card.node.frontmatter.title} />;
