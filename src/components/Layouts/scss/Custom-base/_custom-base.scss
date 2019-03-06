@@ -22,7 +22,10 @@ button {
     cursor: pointer;
     background: transparent;
 }
-
+blockquote {
+    border-left: 0.27rem solid #340d6a;
+    font-size: 1rem;
+}
 .section {
     padding: 80px 0;
     overflow: hidden;
