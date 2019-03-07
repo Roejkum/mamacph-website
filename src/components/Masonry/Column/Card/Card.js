@@ -15,9 +15,9 @@ const Card = (props) => {
     <AniLink paintDrip duration={0.5} to={props.card.node.frontmatter.path} hex="#340d6a">
       {image}
     <div className="mosaikElement">
-      <h3 className="bold mosaikTitle">      
+      <h4 className="bold mosaikTitle">      
           {props.card.node.frontmatter.title} 
-      </h3>
+      </h4>
       <p className="caseSubtitle">
         {props.card.node.frontmatter.manchet}
       </p>
