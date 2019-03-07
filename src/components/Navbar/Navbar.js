@@ -1,7 +1,5 @@
 import React from 'react';
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-
-
 import logo from '../../img/logo_MAMA.png';
 import './Navbar.scss';
 

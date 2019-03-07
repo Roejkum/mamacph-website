@@ -40,7 +40,7 @@ export const CasesPostTemplate = ({
               { imageJsx }
                 { video ?
                 <div className="videoWrapper">
-                  <iframe className="videoIframe" src={video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                  <iframe className="videoIframe" src={video} title={title + 'video'} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div> 
                 : null }
               </div>
