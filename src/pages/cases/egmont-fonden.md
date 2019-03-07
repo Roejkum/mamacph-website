@@ -11,8 +11,6 @@ Egmont Fonden arbejder for at forbedre børn og unges levevilkår. Egmont Fonden
 **Involvering:**\
 Design og udvikling af digital årsrapport 2016 og 2017.
 
-> **Parter:**
->
->  MAMA // Untold // Egmont Fonden
+> **Parter:** MAMA // Untold // Egmont Fonden
 
 **Link:** [egmontrapporten.dk](http://egmontrapporten.dk)
