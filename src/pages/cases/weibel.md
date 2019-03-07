@@ -13,8 +13,4 @@ Den danske radarvirksomhed Weibel ønskede at opdatere deres præsentationsmater
 Roll-ups\
 3d-animationer, der præsenterer Weibels radarer i forskellige scenarier. Animationerne bliver vist som eksempler over hele verden og er også blevet vist i Berlingske.
 
-> **Parter:**
->
->  
->
-> MAMA // Weibel
+> **Parter:** MAMA // Weibel
