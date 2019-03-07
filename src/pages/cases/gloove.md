@@ -11,8 +11,6 @@ Gloove er en grøn nyskabende flyttehjælpsplatform, som tilbyder billig flytteh
 **Involvering:** \
 Design og videreudvikling af website. Udviklet i en static site generator "Jekyl".
 
-> **Parter:**
->
->  MAMA // Gloove
+> **Parter:** MAMA // Gloove
 
 **Link:** [gloove.dk](https://www.gloove.dk/)
