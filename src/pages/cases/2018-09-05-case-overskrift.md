@@ -13,6 +13,4 @@ Assembly Voting er en frontløber i udbredelsen af digitale valg med det formål
 Tegning og animation af en explainer-video til brug på digitale platforme\
 Manuskript og speak
 
-> **Parter:**
->
->  MAMA // Assembly Voting
+> **Parter:**  MAMA // Assembly Voting
