@@ -11,8 +11,6 @@ Center for Ludomani forebygger og behandler ludomani. I samarbejder med bureauet
 **Involvering:**\
 Udvikling af kampagnesite med 6 sprogvarianter
 
-> **Parter:**
->
->  MAMA // Another // Center for Ludomani
+> **Parter:**  MAMA // Another // Center for Ludomani
 
 **Link:** [stopludomani.nu](http://stopludomani.nu/index.html)
