@@ -12,10 +12,6 @@ DEA er en tænketank der arbejder for at styrke uddannelse og forskning for dans
 Design og udvikling af website\
 Udviklet til WordPress med et custom tema.
 
-> **Parter:**
->
->  
->
-> MAMA // DEA
+> **Parter:** MAMA // DEA
 
 **Link:** [småbørnsløftet.dk](https://småbørnsløftet.dk)
