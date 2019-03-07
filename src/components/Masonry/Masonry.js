@@ -107,7 +107,7 @@ class Masonry extends Component {
                 </div>
                 <div className={this.state.OGcards > this.state.cardsWithLimit? 'center': 'center hidden' }>
                     <button className={this.state.OGcards > this.state.cardsWithLimit? 'btn': 'btn hidden' } onClick={this.handleClickLoadMore}>
-                        Show more +
+                        Vis flere +
                     </button>
                 </div>
             </>
