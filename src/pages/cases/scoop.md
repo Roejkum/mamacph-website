@@ -12,6 +12,4 @@ Kampagnen Danmark for Velfærd er et initiativ sat i søen af fagbevægelsen. Fo
 **Involvering:**\
 Grafisk design af foldere, flyers og materialer til konference (spilledug, handlekort, skilte mm)
 
-> **Parter:**
->
->  MAMA // DeltagerDanmark // FOA // 3F // HK // DSR // DSR // BUPL //  m.fl.
+> **Parter:** MAMA // DeltagerDanmark // FOA // 3F // HK // DSR // DSR // BUPL //  m.fl.
