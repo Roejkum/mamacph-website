@@ -14,8 +14,6 @@ Borgerinitiativet "Så er det nu" ønskede en hjemmeside som midtpunkt for deres
 Design og udvikling af website der kan håndtere store mængder trafik\
 Udviklet i ReactJS og GatsbyJS
 
-> **Parter:**
->
->  MAMA // Så er det nu
+> **Parter:** MAMA // Så er det nu
 
 Link: [saaerdet.nu](https://www.saaerdet.nu)
