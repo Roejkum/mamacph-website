@@ -5,9 +5,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layouts/Layout';
 import Img from "gatsby-image";
 
-
-
-
 export const CasesPostTemplate = ({
   image,
   title,
@@ -18,17 +15,17 @@ export const CasesPostTemplate = ({
 }) => {
   let imageJsx;
   if( image.childImageSharp !== null ) {
-    imageJsx = <Img fluid={image.childImageSharp.fluid} alt={title}/>;
+    imageJsx = <Img className="case-img" fluid={image.childImageSharp.fluid} alt={title}/>;
   } else {
-    imageJsx= <img src={image.publicURL} alt={title}/>;
+    imageJsx= <img className="case-img" src={image.publicURL} alt={title}/>;
   }
 
   return (
     <Layout>
-    <section>
-      {helmet || ''}
-      <div className="container-fluid wrap case">
-        <div className="row vh-100 middle-xs case-row">
+      <section>
+        {helmet || ''}
+        <div className="container-fluid wrap case">
+          <div className="row vh-100 middle-xs case-row">
             <div className="col-xs-12 col-sm-6 col-md-6">
               <h1 className="secondary">
                 {title}
@@ -38,15 +35,15 @@ export const CasesPostTemplate = ({
             </div> 
             <div className="col-xs-12 col-sm-6 col-md-6">
               { imageJsx }
-                { video ?
+              { video ?
                 <div className="videoWrapper">
                   <iframe className="videoIframe" src={video} title={title + 'video'} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div> 
-                : null }
-              </div>
+              : null }
+            </div>
           </div>
-      </div>
-    </section>
+        </div>
+      </section>
     </Layout>
   )
 }
@@ -100,7 +97,6 @@ export const pageQuery = graphql`
               aspectRatio
               src
             }
-
           }
           publicURL
         }

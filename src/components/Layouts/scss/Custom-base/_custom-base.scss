@@ -87,7 +87,10 @@ img {
     margin: 0 !important;
     line-height: 0;
 }
-
+.case-img {
+    @extend %box-shadow;
+    @extend %border-radius;
+}
 .section {
     animation: fade-in 0.4s;
 }
