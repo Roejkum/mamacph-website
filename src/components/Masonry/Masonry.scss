@@ -1,3 +1,5 @@
+@import '../Layouts/scss/variables/variables';
+
 .masonryWrapper {
     display: flex;
 }
@@ -56,7 +58,6 @@ h4.mosaikTitle {
   height: 100%;
   position: absolute;
   z-index: 200;
-  border-radius: 15px;
   bottom: 0;
   left: 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+69,000000+100&0+69,1+100 */
@@ -65,22 +66,23 @@ background: -webkit-linear-gradient(top, rgba(0,0,0,0) 70%,rgba(0,0,0,1) 160%); 
 background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 160%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
   transition: all 0.4s;
+  @extend %border-radius;
 }
 .contentMosaik {
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
   line-height: 0;
   margin: 0 15px;
   margin-bottom: 30px;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.25);
   transition: all 0.4s ease;
+  @extend %border-radius;
+  @extend %box-shadow;
+  @extend %box-shadow-hover;
 }
 @media (hover: hover) {
     .contentMosaik:hover {
         transform: translateY(-10px);
         transition: transform 0.4s ease;
-        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
     }
 }
 .contentMosaik img { 
@@ -103,14 +105,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: all 0.4s ease;
-    border-radius: 15px;
-}
-@media (hover: hover) {
-    .contentMosaik:hover .overlayMosaik{
-        background: rgba(0, 0, 0, 0.7);
-        opacity: 1;
-        transition: all 0.4s ease;
-    }
+    @extend %border-radius;}
+.contentMosaik:hover .overlayMosaik{
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    transition: all 0.4s ease;
 }
 .btn {
     opacity: 1;
