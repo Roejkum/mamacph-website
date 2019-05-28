@@ -4,7 +4,7 @@ path: /gloove
 image: /img/gloove.gif
 title: Gloove
 manchet: Webdesign og udvikling
-date: 2019-03-07T09:45:40.313Z
+date: 2019-03-04T23:00:00.000Z
 ---
 Gloove er en grøn nyskabende flyttehjælpsplatform, som tilbyder billig flyttehjælp.
 
