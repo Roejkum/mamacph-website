@@ -11,8 +11,6 @@ Cobiro udvikler kunstig intelligens der automatiserer opsætning af digital anno
 **Involvering:** \
 Udvikling af nyt website i Craft CMS.
 
-> **Parter:**
->
->  MAMA // Cobiro
+> **Parter:** MAMA // Cobiro
 
 **Link:** [cobiro.com](https://cobiro.com)
