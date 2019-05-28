@@ -1,16 +1,18 @@
 ---
 templateKey: cases-post
-path: /tal-om-det
-image: /img/stopludomani-2-2.jpg
+path: /center-for-ludomani
+image: /img/spiltilstregen2.jpg
 title: Center for Ludomani
-manchet: Kampagnesite
-date: 2019-03-07T09:17:23.190Z
+manchet: Design og udvikling af landingpage
+date: 2019-05-28T09:05:18.031Z
 ---
-Center for Ludomani forebygger og behandler ludomani. I samarbejder med bureauet Another lancerede Center for Ludomani indsatsen "Stop ludomani nu" rettet mod danskere med anden etnisk baggrund.
+Center for Ludomani arbejder for at forebygge og behandle ludomani. "Spil til stregen" var en indsats målrettet mod professionelle sportsudøvere.
 
-**Involvering:**\
-Udvikling af kampagnesite med 6 sprogvarianter
+Involvering:\
+Design og udvikling af landingpage med en Wordpress-backend. Produktion af video content til web og SoMe.
 
-> **Parter:**  MAMA // Another // Center for Ludomani
+> **Parter:**
+>
+>  MAMA // Untold // Center for Ludomani
 
-**Link:** [stopludomani.nu](http://stopludomani.nu/index.html)
+**Link:** [spiltilstregen.dk](http://spiltilstregen.dk)
