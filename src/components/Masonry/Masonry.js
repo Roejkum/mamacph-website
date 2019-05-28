@@ -6,7 +6,7 @@ class Masonry extends Component {
     
         state = {
             columns: null,
-            maxCards: 6,
+            maxCards: 8,
             cardColumns: [],
             cardsLoaded: false,
             OGcards: this.props.posts,
@@ -23,8 +23,8 @@ class Masonry extends Component {
                 this.reorder(this.state.cardsWithLimit, 2);
                 this.setState({columns: 2});
             } else {
-                this.reorder(this.state.cardsWithLimit, 3);
-                this.setState({columns: 3});
+                this.reorder(this.state.cardsWithLimit, 2);
+                this.setState({columns: 2});
             }
         }
     }
@@ -36,7 +36,7 @@ class Masonry extends Component {
             } else if (initialWinWidth <= 900) {
                 this.setState({columns: 2});
             } else {
-                this.setState({columns: 3});
+                this.setState({columns: 2});
             }
         }
     }

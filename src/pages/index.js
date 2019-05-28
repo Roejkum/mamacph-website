@@ -21,10 +21,9 @@ export default class IndexPage extends React.Component {
       <Layout>
         <Jumbotron />
           <section className="section">
-            <div className="container-fluid">
+            <div className="container-fluid wrap">
               <div className="row middle-xs clientlogoes">
                 <div className="col-xs-12">
-                  <h2 className="bold center secondary">Referencer</h2>
                 </div>
                 <div className="col-xs-4 col-sm-2"><img src={dlfLogo} alt="DLF logo"/></div>
                 <div className="col-xs-4 col-sm-2"><img src={egmontLogo} alt="Egmont logo"/></div>
@@ -36,14 +35,16 @@ export default class IndexPage extends React.Component {
             </div>
           </section>
 
-          <section className="section-fullwidth section">
+          <section className=" section">
+          <div className="wrap container-fluid">
             <div className="row">
               <div className="col-xs-12">
                 <div className="content-padding">
-                  <h2 className="bold center secondary">Vores cases</h2>
+                  <h2 className="bold center secondary section-heading">Cases</h2>
                 </div>
                 <Masonry posts={posts} />
               </div>
+            </div>
             </div>
           </section>
 

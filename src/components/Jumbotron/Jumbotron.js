@@ -1,15 +1,16 @@
 import React from 'react';
 import './Jumbotron.scss';
-import Img from '../../img/jumbotron.svg';
+import JumboSvg from './JumboSvg';
 
 const Jumbotron = (props) => {
    
     return (
         <section className="jumbotron">
-            <img src={Img} className="jumbotron-image" alt="Jumbotron background"/>
-            <div className="jumbtron-bg jumbotron-content container-fluid">
+            {/* <img src={Img} className="jumbotron-image" alt="Jumbotron background"/> */}
+            <JumboSvg classes="jumbotron-image" />
+            <div className="jumbtron-bg jumbotron-content container-fluid wrap">
             <div className="row">
-                <div className="col-xs-12 col-sm-6 col-sm-offset-1">
+                <div className="col-xs-12 col-sm-6">
                     <h1 className="jumbotron-heading">
                         <span className="css-fisw11">
                             <span className="css-3w0cwq big">

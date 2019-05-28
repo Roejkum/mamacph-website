@@ -2,6 +2,8 @@
 
 .masonryWrapper {
     display: flex;
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
 .masonryWrapper>div {
     flex-grow: 1;
@@ -72,8 +74,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   position: relative;
   overflow: hidden;
   line-height: 0;
-  margin: 0 15px;
-  margin-bottom: 30px;
+  margin: 0 1rem;
+  margin-bottom: 2rem;
   transition: all 0.4s ease;
   @extend %border-radius;
   @extend %box-shadow;
