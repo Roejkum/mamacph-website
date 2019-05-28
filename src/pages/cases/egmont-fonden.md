@@ -1,16 +1,18 @@
 ---
 templateKey: cases-post
-path: /egmontrapporten
-image: /img/egmontrapporten-1.gif
-title: Egmont Rapporten 2017
-manchet: Website - online rapport
-date: 2019-03-05T13:19:55.788Z
+path: /egmont-fondens-bornetopmode
+image: /img/bornetop.jpg
+title: Egmont Fonden
+manchet: Design og udvikling af website
+date: 2018-05-28T09:17:00.000Z
 ---
-Egmont Fonden arbejder for at forbedre børn og unges levevilkår. Egmont Fonden udgiver årligt en årsrapport der beskriver det forgangne års tema og resultater, som de i 2016 for første gang ønskede at digitalisere og mere tilgængelig.
+Egmont Fonden afholdt i 2017 et børnetopmøde, som skulle lade udsatte børn komme til orde. 
 
 **Involvering:**\
-Design og udvikling af digital årsrapport 2017.
+Design og udvikling af et Wordpress-site.
 
-> **Parter:** MAMA // Untold // Egmont Fonden
-
-**Link:** [egmontrapporten.dk](http://egmontrapporten.dk)
+> **Parter:**
+>
+>  
+>
+> MAMA // Untold // Egmont Fonden
