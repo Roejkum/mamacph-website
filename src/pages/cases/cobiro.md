@@ -4,7 +4,7 @@ path: /cobiro
 image: /img/cobiro.jpg
 title: Cobiro
 manchet: Udvikling
-date: 2019-05-28T08:23:46.132Z
+date: 2019-05-27T22:00:00.000Z
 ---
 Cobiro udvikler kunstig intelligens der automatiserer opsætning af digital annoncering og rapportering.
 
